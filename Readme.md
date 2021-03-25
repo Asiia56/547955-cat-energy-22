@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Asiia Khytrych](https://up.htmlacademy.ru/adaptive/22/user/547955).
-* Наставник: `Неизвестно`.
+* Наставник: [Алена Третьякова](https://htmlacademy.ru/profile/id1167849).
 
 ---
 
