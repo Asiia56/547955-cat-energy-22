@@ -1,12 +1,181 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
   </head>
   <body>
+    <header class="pageHeader">
+      <a class="pageHeader__logoImg"><img src="img/logo-mobile.jpg" width="34" height="38" alt="Кэт энерджи" /> </a>
+      <a class="page__logoTxt"><img src="img/logo2.jpg" width="101" height="18" alt="Кэт энерджи" /></a>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
+      <nav class="siteNav">
+        <button class="siteNav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <ul class="siteNav__container navList">
+          <li class="navList__item navList__item--active"> <a href="#">Главная</a> </li>
+          <li class="navList__item"> <a href="#">Каталог продукции</a> </li>
+          <li class="navList__item"> <a href="#">Подбор программы</a> </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container">
+        <h1 class="visually-hidden">Питание для кошек и котов Кэт энерджи</h1>
+
+        <h2 class="formHeader">Подбор программы</h2>
+        <p class="formIntro"> Заполните анкету, и мы подберем программу питания для вашего кота </p>
+
+        <form class="orderForm" action="https://echo.htmlacademy.ru" method="post">
+
+            <fieldset class="basicInfo fieldset">
+              <label class="labelForm" for="name-field">ИМЯ:*
+              <input class="inputBox" id="name-field" type="text" name="name" placeholder="барсик" />
+            </label>
+              <label class="labelForm" for="weight-field">Вес (кг):*
+              <input class="inputBox" id="weight-field" type="text" name="weight" placeholder="7" />
+              </label>
+
+                <label class="labelForm" for="age-field">Возраст (лет):
+                <input class="inputBox" id="age-field" type="text" name="age" placeholder="7" />
+                </label>
+            </fieldset>
+
+            <fieldset class="fieldset reason">
+              <ul class="form__reason">
+                <li class="formOption form__Radio">
+                  <input type="radio" class="form__InputRadio form__Input" name="form-reason" id="reason-weight-loss">
+                  <label for="reason-weight-loss">похудение</label>
+                </li>
+                <li class="formOption form__Radio">
+                  <input type="radio" class="form__InputRadio form__Input" name="form-reason" id="reason-weight-gain">
+                  <label for="reason-weight-gain">Набор массы</label>
+                </li>
+                <li class="formOption form__Radio">
+                  <input type="radio" class="form__InputRadio form__Input" name="form-reason" id="reason-advice">
+                  <label for="reason-advice">Не знаю (Нужен ваш совет)</label>
+                </li>
+              </ul>
+            </fieldset>
+
+            <fieldset class="contacts fieldset">
+              <legend class="fieldset__legend"> Контактные данные (владельца кота) </legend>
+                <label class="labelForm" for="email-field">E-mail:*
+                <input class="inputBox" id="email-field" type="email" name="email" placeholder="kuklachev@gmail.com" />
+                <svg width="20" height="15" viewBox="0 0 20 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line x1="1.65" y1="5.84766" x2="1.65" y2="13.8477" stroke="#222222" stroke-width="1.3"/>
+                <line x1="18.65" y1="5.84766" x2="18.65" y2="13.8477" stroke="#222222" stroke-width="1.3"/>
+                <line x1="1" y1="13.1977" x2="19" y2="13.1977" stroke="#222222" stroke-width="1.3"/>
+                <line x1="1" y1="1.19766" x2="19" y2="1.19766" stroke="#222222" stroke-width="1.3"/>
+                <path d="M18.35 3.02975L10 9.5242L1.65 3.02975V1.49766H4.5L10 1.49766H15H18.35V3.02975Z" stroke="#222222" stroke-width="1.3"/>
+                </svg>
+                </label>
+                  <label class="labelForm" for="phone-field">Возраст (лет):
+                  <input class="inputBox" id="phone-field" type="phone" name="phone" placeholder="8 (960) 900-60-90" />
+                  <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0)">
+                  <path d="M17.9 9.75275H9.39999V10.9569H17.9L15.8 13.0641L16.7 13.9672L19.8 10.8565C19.8974 10.7263 19.95 10.5678 19.95 10.405C19.95 10.2421 19.8974 10.0837 19.8 9.95344L16.7 6.84277L15.8 7.74587L17.9 9.75275Z" fill="black"/>
+                  <path d="M8.10001 19.7872V13.5659C8.08846 13.41 8.02154 13.2635 7.91142 13.153C7.80131 13.0425 7.65531 12.9754 7.50001 12.9638H3.10001C3.10516 13.2815 3.23325 13.5848 3.45718 13.8095C3.68112 14.0342 3.98336 14.1627 4.30001 14.1679H6.80001V19.1851H3.10001C2.86326 19.2 2.62591 19.1676 2.40176 19.0896C2.17762 19.0117 1.97115 18.8898 1.79436 18.7311C1.61757 18.5723 1.47399 18.3799 1.37196 18.165C1.26992 17.9501 1.21148 17.717 1.20001 17.4793V3.43111C1.19181 2.96681 1.36516 2.51774 1.68292 2.18013C2.00069 1.84252 2.43758 1.64322 2.90001 1.62492H6.80001V6.64212H4.40001C4.08336 6.64729 3.78112 6.77581 3.55718 7.00052C3.33325 7.22523 3.20516 7.52851 3.20001 7.84625H7.60001C7.75531 7.83466 7.90131 7.76751 8.01142 7.65701C8.12154 7.54651 8.18846 7.40002 8.20001 7.24418V0.922517C8.15232 0.76584 8.06117 0.626022 7.93721 0.519407C7.81325 0.412792 7.66161 0.343785 7.50001 0.320453H3.10001C2.70599 0.307054 2.31321 0.371716 1.94411 0.510744C1.57501 0.649771 1.23684 0.860436 0.948933 1.13069C0.661026 1.40095 0.42903 1.7255 0.266207 2.08579C0.103385 2.44608 0.01293 2.83504 1.46306e-05 3.23043V17.1782C-0.0289644 17.5773 0.0246504 17.978 0.157487 18.3552C0.290324 18.7324 0.499509 19.078 0.771886 19.3701C1.04426 19.6623 1.37394 19.8947 1.74019 20.0529C2.10643 20.211 2.50132 20.2913 2.90001 20.2889H7.50001C7.5735 20.304 7.64943 20.3022 7.72216 20.2839C7.7949 20.2655 7.86259 20.2309 7.92021 20.1828C7.97783 20.1346 8.02391 20.074 8.05504 20.0055C8.08616 19.9371 8.10153 19.8624 8.10001 19.7872Z" fill="black"/>
+                  </g>
+                  <defs>
+                  <clipPath id="clip0">
+                  <rect width="20" height="20.0688" fill="white" transform="translate(0 0.320435)"/>
+                  </clipPath>
+                  </defs>
+                  </svg>
+</label>
+            </fieldset>
+
+            <fieldset class="fieldset aboutCat">
+              <legend class="fieldset__legend">Комментарий</legend>
+                <textarea class="inputBox" id="comment-field" name="comment" rows="4" placeholder="Расскажите обо всех повадках кота"></textarea>
+            </fieldset>
+
+            <fieldset class="fieldset addForm">
+              <legend class="fieldset__legend">Дополнительно</legend>
+              <ul class="form__addGoods">
+                <li class="formOption form__Checkbox">
+                  <input class="form__InputCheckbox form__Input" type="checkbox" name="add-good" id="check-sugar" checked>
+                  <label for="check-sugar">сахарозаменитель</label>
+                </li>
+                <li class="formOption form__Checkbox">
+                  <input class="form__InputCheckbox form__Input" type="checkbox" name="add-good" id="check-water">
+                  <label for="check-water">питьевая вода</label>
+                </li>
+                <li class="formOption form__Checkbox">
+                  <input class="form__InputCheckbox form__Input" type="checkbox" name="add-good" id="check-milk">
+                  <label for="check-milk">молоко</label>
+                </li>
+                <li class="formOption form__Checkbox">
+                  <input class="form__InputCheckbox form__Input" type="checkbox" name="add-good" id="check-vitamins">
+                  <label for="check-vitamins">витамины</label>
+                </li>
+              </ul>
+            </fieldset>
+
+            <button class="formSubmit btnOrder">отправить заявку</button>
+            <p>* — Обязательные поля</p>
+        </form>
+    </main>
+
+    <footer class="pageFooter">
+      <div class="container">
+        <div class="footerInvitation">
+          <p class="footer__text">Приглашаем к сотрудничеству дилеров!</p>
+          <p class="footerAddress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          <div class="footer__map">
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3997.118506746264!2d30.3232198!3d59.9394554!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20Rusia%2C%20191186!5e0!3m2!1sro!2sro!4v1616842319284!5m2!1sro!2sro" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+        </div>
+
+        <a class="page__logoTxt"><img src="img/logo2.jpg" width="101" height="18" alt="Кэт энерджи" /></a>
+
+        <div class="footerSocialBtn">
+          <ul class="socialList">
+            <li> <a href="#" class="socialBtn">
+                <span class="visually-hidden">Вконтакте</span>
+                <svg aria-hidden="true" focusable="false" width="44" height="44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M22.16 1.48c11.5 0 20.8 9.1 20.8 20.34 0 11.23-9.3 20.33-20.8 20.33-11.49 0-20.8-9.1-20.8-20.33 0-11.23 9.31-20.34 20.8-20.34z" />
+                  <path
+                    d="M24.54 25.73c.92-.3 2.1 1.91 3.35 2.75.95.64 1.67.5 1.67.5l3.34-.04s1.75-.1.92-1.46c-.07-.11-.48-1-2.49-2.83-2.1-1.92-1.8-1.6.72-4.92 1.53-2.02 2.15-3.25 1.96-3.78-.19-.5-1.32-.37-1.32-.37l-3.77.03c-.36 0-.67.1-.82.48 0 0-.6 1.56-1.39 2.89-1.67 2.8-2.34 2.95-2.62 2.77-.64-.4-.48-1.63-.48-2.5 0-2.71.42-3.84-.81-4.14-.41-.1-.71-.16-1.76-.17-1.34-.02-2.48 0-3.12.31-.43.21-.76.67-.56.7.25.03.8.14 1.11.54.39.52.37 1.68.37 1.68s.22 3.2-.52 3.6c-.5.27-1.2-.29-2.7-2.83a23.51 23.51 0 01-1.34-2.74s-.1-.27-.3-.41c-.25-.18-.59-.23-.59-.23l-3.57.02s-.54.01-.74.24c-.17.2-.01.63-.01.63s2.8 6.45 5.97 9.7c2.9 2.98 6.21 2.79 6.21 2.79h1.5s.45-.05.68-.3c.22-.22.21-.64.21-.64s-.03-1.98.9-2.27z"
+                    fill="#fff" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="socialBtn">
+                <span class="visually-hidden">Инстаграм</span>
+                <svg aria-hidden="true" focusable="false" width="44" height="44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M21.9 1.5a20.3 20.3 0 110 40.6 20.3 20.3 0 010-40.6z" />
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M14 11h15a3 3 0 013 3v15a3 3 0 01-3 3H14a3 3 0 01-3-3V14a3 3 0 013-3zm11 10.5a3.5 3.5 0 10-7 0 3.5 3.5 0 007 0zM14 29v-9h1.2a6.5 6.5 0 1012.6 0H29v9H14zm11-11h4v-4h-4v4z" fill="#fff" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="socialBtn">
+                <span class="visually-hidden">Фейсбук</span>
+                <svg aria-hidden="true" focusable="false" width="44" height="44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M21.9 1.5a20.3 20.3 0 110 40.6 20.3 20.3 0 010-40.6z" />
+                  <path d="M28 15v-4h-4a4 4 0 00-4 4v4h-4v4h4v10h4V23h4v-4h-4v-4h4z" fill="#fff" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footerCopyright">
+          <p> HTML Academy </p>
+          <a href="#" class="copyrightLogo">
+            <svg width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z"
+                fill="#666666" />
+            </svg>
+          </a>
+
+        </div>
+      </div>
+
+    </footer>
 
   </body>
 </html>
