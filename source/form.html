@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html class="page page-form" lang="ru">
 
 <head>
   <meta charset="utf-8">
@@ -23,14 +23,14 @@
   </header>
 
   <main class="container">
-    <h1 class="visually-hidden">Питание для кошек и котов Кэт энерджи</h1>
+    <h1 class="visually-hidden">Подбор питания для котов и кошек Кэт энерджи</h1>
 
-    <h2 class="form-header">Подбор программы</h2>
-    <p class="form-intro"> Заполните анкету, и мы подберем программу питания для вашего кота </p>
+    <h2 class="page-form__header">Подбор программы</h2>
+    <p class="page-form__intro"> Заполните анкету, и мы подберем программу питания для вашего кота </p>
 
-    <form class="order-form" action="https://echo.htmlacademy.ru" method="post">
+    <form class="form" action="https://echo.htmlacademy.ru" method="post">
 
-      <fieldset class="basicInfo fieldset">
+      <fieldset class="basic-info fieldset">
         <label class="label-form" for="name-field">ИМЯ:*
           <input class="input-box" id="name-field" type="text" name="name" placeholder="барсик" />
         </label>
@@ -77,9 +77,9 @@
         <textarea class="input-box" id="comment-field" name="comment" rows="4" placeholder="Расскажите обо всех повадках кота"></textarea>
       </fieldset>
 
-      <fieldset class="fieldset add-form">
+      <fieldset class="fieldset additional">
         <legend class="fieldset__legend">Дополнительно</legend>
-        <ul class="form__add-goods">
+        <ul class="form__additional-goods">
           <li class="form-option form__checkbox">
             <input class="form__input-checkbox form__input" type="checkbox" name="add-good" id="check-sugar" checked>
             <label for="check-sugar">сахарозаменитель</label>
@@ -99,7 +99,7 @@
         </ul>
       </fieldset>
 
-      <button class="form-submit btn-order">отправить заявку</button>
+      <button class="form-submit basic-btn">отправить заявку</button>
       <p>* — Обязательные поля</p>
     </form>
   </main>
