@@ -4,33 +4,35 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&display=swap" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body class="page__body">
-  <header class="page-header">
-    <a class="page__logo--img"><img src="img/logo-mobile.jpg" width="34" height="38" alt="Кэт энерджи" /> </a>
-    <a class="page__logo--txt"><img src="img/logo2.jpg" width="101" height="18" alt="Кэт энерджи" /></a>
+  <header class="header container">
+    <a class="header__logo--img"><img src="img/logo-mobile.jpg" width="34" height="38" alt="Кэт энерджи" /> </a>
+    <a class="header__logo--txt"><img src="img/logo_2.png" width="101" height="18" alt="Кэт энерджи" /></a>
+    <button class="site-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
 
     <nav class="site-nav">
-      <button class="site-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <ul class="site-nav__container nav-list">
-        <li class="nav-list__item"> <a href="index.html">Главная</a> </li>
-        <li class="nav-list__item nav-list__item--current"> <a>Каталог продукции</a> </li>
-        <li class="nav-list__item"> <a href="form.html">Подбор программы</a> </li>
+        <li class="nav-list__item"> <a class="nav-list__link" href="index.html">Главная</a> </li>
+        <li class="nav-list__item nav-list__item--current"> <a class="nav-list__link" href="catalog.html">Каталог продукции</a> </li>
+        <li class="nav-list__item"> <a class="nav-list__link" href="form.html">Подбор программы</a> </li>
       </ul>
     </nav>
   </header>
 
   <main class="container">
-    <h1 class="page-catalog__header">Каталог продукции</h1>
+    <h1 class=" visually-hidden">Каталог питания для кошек и котов</h1>
     <section class="goods">
-      <h2 class="visually-hidden">Каталог питания для кошек и котов</h2>
+      <h2 class="page__header">Каталог продукции</h2>
       <ul class="goods-list">
         <li class="goods-list__item">
           <img class="goods-list__image" src="img/catalog/catalog-1-desktop.png" width="68" height="86" alt="Cat Energy PRO 500 г курица" />
           <dl class="goods-list__characterictics">
-            <h3 class="goods-list__header">Cat Energy PRO 500 г</h3>
+            <h3 class="goods-list__item-header">Cat Energy PRO 500 г</h3>
             <dt class="goods-list__characterictics-label">Масса </dt>
             <dd class="goods-list__characterictics-value">500 г</dd>
             <dt class="goods-list__characterictics-label">Вкус</dt>
@@ -43,7 +45,7 @@
         <li class="goods-list__item">
           <img class="goods-list__image" src="img/catalog/catalog-2-desktop.png" width="84" height="101" alt="Cat Energy PRO 1000 г курица" />
           <dl class="goods-list__characterictics">
-            <h3 class="goods-list__header">Cat Energy PRO 1000 г</h3>
+            <h3 class="goods-list__item-header">Cat Energy PRO 1000 г</h3>
             <dt class="goods-list__characterictics-label">Масса </dt>
             <dd class="goods-list__characterictics-value">1000 г</dd>
             <dt class="goods-list__characterictics-label">Вкус</dt>
@@ -56,7 +58,7 @@
         <li class="goods-list__item">
           <img class="goods-list__image" src="img/catalog/catalog-3-desktop.png" width="68" height="78" alt="Cat Energy PRO 500 г рыба" />
           <dl class="goods-list__characterictics">
-            <h3 class="goods-list__header">Cat Energy PRO 500 г</h3>
+            <h3 class="goods-list__item-header">Cat Energy PRO 500 г</h3>
             <dt class="goods-list__characterictics-label">Масса </dt>
             <dd class="goods-list__characterictics-value">500 г</dd>
             <dt class="goods-list__characterictics-label">Вкус</dt>
@@ -68,7 +70,7 @@
         <li class="goods-list__item">
           <img class="goods-list__image" src="img/catalog/catalog-4-desktop.png" width="84" height="101" alt="Cat Energy PRO 1000 г рыба" />
           <dl class="goods-list__characterictics">
-            <h3 class="goods-list__header">Cat Energy PRO 1000 г</h3>
+            <h3 class="goods-list__item-header">Cat Energy PRO 1000 г</h3>
             <dt class="goods-list__characterictics-label">Масса </dt>
             <dd class="goods-list__characterictics-value">1000 г</dd>
             <dt class="goods-list__characterictics-label">Вкус</dt>
@@ -81,7 +83,7 @@
         <li class="goods-list__item">
           <img class="goods-list__image" src="img/catalog/catalog-5-desktop.png" width="68" height="78" alt="Cat Energy Slim 500 г гречка" />
           <dl class="goods-list__characterictics">
-            <h3 class="goods-list__header">Cat Energy Slim 500 г</h3>
+            <h3 class="goods-list__item-header">Cat Energy Slim 500 г</h3>
             <dt class="goods-list__characterictics-label">Масса </dt>
             <dd class="goods-list__characterictics-value">500 г</dd>
             <dt class="goods-list__characterictics-label">Вкус</dt>
@@ -94,7 +96,7 @@
         <li class="goods-list__item">
           <img class="goods-list__image" src="img/catalog/catalog-6-desktop.png" width="84" height="100" alt="Cat Energy Slim 1000 г гречка" />
           <dl class="goods-list__characterictics">
-            <h3 class="goods-list__header">Cat Energy Slim 1000 г</h3>
+            <h3 class="goods-list__item-header">Cat Energy Slim 1000 г</h3>
             <dt class="goods-list__characterictics-label">Масса </dt>
             <dd class="goods-list__characterictics-value">1000 г</dd>
             <dt class="goods-list__characterictics-label">Вкус</dt>
@@ -107,7 +109,7 @@
         <li class="goods-list__item">
           <img class="goods-list__image" src="img/catalog/catalog-7-desktop.png" width="72" height="84" alt="Cat Energy Slim 500 г рис" />
           <dl class="goods-list__characterictics">
-            <h3 class="goods-list__header">Cat Energy Slim 500 г</h3>
+            <h3 class="goods-list__item-header">Cat Energy Slim 500 г</h3>
             <dt class="goods-list__characterictics-label">Масса </dt>
             <dd class="goods-list__characterictics-value">500 г</dd>
             <dt class="goods-list__characterictics-label">Вкус</dt>
@@ -122,14 +124,14 @@
             <line x1="15" x2="15" y2="30" stroke="#D3D3D3" stroke-width="2" />
             <line x1="30" y1="15" y2="15" stroke="#D3D3D3" stroke-width="2" />
           </svg>
-          <h2 class="goods-list__header">Показать еще 100500 товаров</h2>
-          <p>На самом деле вкусов гораздо больше!</p>
-          <button class="basic-btn--show">показать все</button>
+          <h2 class="goods-list__item-header goods-list__item-header--more-goods">Показать еще 100500 товаров</h2>
+          <p class="goods-list__characterictics-label goods-list__characterictics-label--more-goods">На самом деле вкусов гораздо больше!</p>
+          <button class="basic-btn basic-btn--show">показать все</button>
         </li>
       </ul>
     </section>
 
-    <section class="add-goods">
+    <section class="add-goods container">
       <h2 class="add-goods__header">Дополнительные товары</h2>
       <ul class="add-goods-list">
         <li class="add-goods-list__item">
@@ -171,33 +173,33 @@
     </section>
   </main>
 
-  <footer class="page-footer">
-    <div class="footer-invitation container">
+  <footer class="footer">
+    <div class="footer__invitation container">
       <p class="footer__text">Приглашаем к сотрудничеству дилеров!</p>
-      <p class="footer-address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      <p class="footer__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
     </div>
 
-    <div class="footer__map">
+    <div class="footer__map container">
       <iframe class="map"
         src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3997.118506746264!2d30.3232198!3d59.9394554!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20Rusia%2C%20191186!5e0!3m2!1sro!2sro!4v1616842319284!5m2!1sro!2sro"
-        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </div>
 
     <div class="container">
-      <a class="page__logo--txt"><img src="img/logo2.jpg" width="101" height="18" alt="Кэт энерджи" /></a>
+      <a class="header__logo--txt"><img src="img/logo_2.png" width="101" height="18" alt="Кэт энерджи" /></a>
 
       <div class="footer-social-btn">
         <ul class="social-list">
-          <li> <a href="#" class="social-btn social-btn--vk"> <span class="visually-hidden">Вконтакте</span> </a> </li>
-          <li> <a href="#" class="social-btn social-btn--inst"> <span class="visually-hidden">Инстаграм</span> </a> </li>
-          <li> <a href="#" class="social-btn social-btn--fb"> <span class="visually-hidden">Фейсбук</span> </a> </li>
+          <li> <a href="#" class="social-list__btn social-list__btn--vk"> <span class="visually-hidden">Вконтакте</span> </a> </li>
+          <li> <a href="#" class="social-list__btn social-list__btn--inst"> <span class="visually-hidden">Инстаграм</span> </a> </li>
+          <li> <a href="#" class="social-list__btn social-list__btn--fb"> <span class="visually-hidden">Фейсбук</span> </a> </li>
         </ul>
       </div>
     </div>
 
-    <div class="footer-copyright container">
-      <p> HTML Academy </p>
-      <a href="#" class="copyright-logo">
+    <div class="container">
+      <a href="#" class="footer-copyright">
+        HTML Academy
         <svg width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
             d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z"
@@ -205,7 +207,6 @@
         </svg>
       </a>
     </div>
-
   </footer>
 
 </body>
