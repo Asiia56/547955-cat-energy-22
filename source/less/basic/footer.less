@@ -1,7 +1,8 @@
 .footer__invitation {
   padding-top: 28px;
   padding-bottom: 26px;
-  background-color: @basic_grey;
+  display: flex;
+  justify-content: space-around;
 }
 
 .footer__text {
@@ -15,5 +16,24 @@
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 20px;
+  color: @special_dark-grey;
+}
+
+.footer__last-line {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: @basic_grey;
+}
+
+.footer-copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-copyright__text {
+  font-family: "Arial", sans-serif;
+  line-height: 18px;
   color: @special_dark-grey;
 }
