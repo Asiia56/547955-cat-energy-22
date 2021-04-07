@@ -4,6 +4,7 @@
   line-height: 20px;
   text-transform: uppercase;
   color: @special_dark-grey-2;
+  max-width: 76px;
 }
 
 .goods-list__item-header--more-goods {
@@ -16,7 +17,6 @@
   font-size: 12px;
   line-height: 16px;
   color: @special_dark-grey;
-  text-align: center;
 }
 
 .goods-list {
@@ -24,4 +24,21 @@
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 0;
+}
+
+.goods-list__item {
+  display: grid;
+  grid-template-columns: repeat(2, 140px);
+}
+
+.goods-list__item a {
+  align-self: center;
+  padding: 0;
+  text-align: center;
+}
+
+.goods-list__characterictics {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
