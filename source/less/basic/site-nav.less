@@ -29,8 +29,8 @@
 }
 
 .site-nav--opened .site-nav__toggle {
-  top: 0;
-  left: 0;
+  top: -30px;
+  left: 255px;
 
   &::before,
   &::after {
@@ -51,4 +51,20 @@
   &::after {
     transform: rotate(-45deg);
   }
+}
+
+.site-nav--nojs .site-nav__toggle {
+  display: none;
+}
+
+.site-nav--closed .nav-list {
+  display: none;
+}
+
+.site-nav--opened .nav-list {
+  display: inline;
+}
+
+.site-nav--nojs .nav-list {
+  display: block;
 }
