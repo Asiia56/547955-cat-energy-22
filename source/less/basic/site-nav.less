@@ -3,3 +3,52 @@
   margin: 0 auto;
   padding: 0;
 }
+
+.site-nav {
+  position: relative;
+}
+
+.site-nav__toggle {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  border: none;
+  background-color: white;
+}
+
+.site-nav--closed .site-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: -30px;
+  left: 255px;
+  width: 24px;
+  height: 2px;
+  background-color: black;
+  box-shadow: 0 8px 0 0 black, 0 16px 0 0 black;
+}
+
+.site-nav--opened .site-nav__toggle {
+  top: 0;
+  left: 0;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 13px;
+    left: 17px;
+    width: 24px;
+    height: 2px;
+    background-color: black;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}

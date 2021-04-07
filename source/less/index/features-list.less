@@ -1,8 +1,41 @@
+.features-list {
+  margin: 0;
+  padding: 0;
+}
+
 .features-list__item {
   font-family: "Arial", sans-serif;
   color: @special_dark-grey;
+  position: relative;
+  padding-bottom: 24px;
+  padding-left: 80px;
 }
 
 .features-list__item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 60px;
   background-color: @basic_green;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+.features-list__item--leaf::before {
+  background-image: url("../img/how_list/icon_leaf.png");
+}
+
+.features-list__item--eat::before {
+  background-image: url("../img/how_list/icon_eat.png");
+}
+
+.features-list__item--tub::before {
+  background-image: url("../img/how_list/icon_tub.png");
+}
+
+.features-list__item--alarm::before {
+  background-image: url("../img/how_list/icon_alarm.png");
 }
