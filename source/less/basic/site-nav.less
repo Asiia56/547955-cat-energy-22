@@ -1,11 +1,13 @@
-.site-nav__container {
-  width: 181px;
-  margin: 0 auto;
-  padding: 0;
-}
-
 .site-nav {
   position: relative;
+
+  @media (min-width: @tablet-width) {
+    min-width: 440px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 720px;
+  }
 }
 
 .site-nav__toggle {
@@ -15,32 +17,37 @@
   cursor: pointer;
   border: none;
   background-color: white;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
 
-.site-nav--closed .site-nav__toggle::before {
-  content: "";
-  position: absolute;
-  top: -30px;
-  left: 255px;
-  width: 24px;
-  height: 2px;
-  background-color: black;
-  box-shadow: 0 8px 0 0 black, 0 16px 0 0 black;
+.site-nav--closed .site-nav__toggle {
+  top: -61px;
+  left: 225px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    background-color: @basic_black;
+    box-shadow: 0 8px 0 0 @basic_black, 0 16px 0 0 @basic_black;
+  }
 }
 
 .site-nav--opened .site-nav__toggle {
-  top: -30px;
-  left: 255px;
+  top: -56px;
+  left: 225px;
 
-  &::before,
-  &::after {
+  &::after,
+  &::before {
     content: "";
     position: absolute;
-    top: 13px;
-    left: 17px;
     width: 24px;
     height: 2px;
-    background-color: black;
+    background-color: @basic_black;
   }
 
   &::before {
@@ -59,12 +66,19 @@
 
 .site-nav--closed .nav-list {
   display: none;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
+.site-nav--nojs .nav-list,
 .site-nav--opened .nav-list {
   display: inline;
-}
 
-.site-nav--nojs .nav-list {
-  display: block;
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
