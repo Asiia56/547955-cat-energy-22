@@ -1,6 +1,7 @@
 .features-list {
   margin: 0;
   padding: 0;
+  counter-reset: num;
 
   @media (min-width: @tablet-width) {
     display: flex;
@@ -56,57 +57,32 @@
 }
 
 .features-list__item--leaf::before {
-  background-image: url("../img/how_list/icon_leaf.png");
+  background-image: url("../img/how_list/icon_leaf.svg");
 }
 
 .features-list__item--eat::before {
-  background-image: url("../img/how_list/icon_eat.png");
+  background-image: url("../img/how_list/icon_eat.svg");
 }
 
 .features-list__item--tub::before {
-  background-image: url("../img/how_list/icon_tub.png");
+  background-image: url("../img/how_list/icon_tub.svg");
 }
 
 .features-list__item--alarm::before {
-  background-image: url("../img/how_list/icon_alarm.png");
+  background-image: url("../img/how_list/icon_alarm.svg");
 }
 
 .features-list__item::after {
   @media (min-width: @tablet-width) {
-    content: "";
+    content: counter(num);
+    counter-increment: num;
     position: absolute;
-    top: 0;
+    bottom: 30px;
     left: 50%;
-    height: 280px;
-    background-repeat: no-repeat;
     z-index: -1;
-  }
-}
-
-.features-list__item--leaf::after {
-  @media (min-width: @tablet-width) {
-    width: 112px;
-    background-image: url("../img/how_list/1.png");
-  }
-}
-
-.features-list__item--tub::after {
-  @media (min-width: @tablet-width) {
-    width: 134px;
-    background-image: url("../img/how_list/2.png");
-  }
-}
-
-.features-list__item--eat::after {
-  @media (min-width: @tablet-width) {
-    width: 134px;
-    background-image: url("../img/how_list/3.png");
-  }
-}
-
-.features-list__item--alarm::after {
-  @media (min-width: @tablet-width) {
-    width: 136px;
-    background-image: url("../img/how_list/4.png");
+    font-family: "Oswald", sans-serif;
+    font-size: 280px;
+    line-height: 280px;
+    color: @basic_grey;
   }
 }

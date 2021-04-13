@@ -49,14 +49,16 @@
 }
 
 .page__logo--footer {
-  padding-top: 39px;
+  min-width: @mobile-container;
   padding-bottom: 32px;
   display: flex;
   justify-content: center;
-
   border-bottom: 1px solid @border_grey-footer;
+  align-self: center;
 
   @media (min-width: @tablet-width) {
+    min-width: 101px;
     border-bottom: none;
+    padding-bottom: 0;
   }
 }
