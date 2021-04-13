@@ -75,8 +75,10 @@
   justify-content: space-between;
   align-items: center;
   padding-top: 22px;
+  min-width: @mobile-container;
 
   @media (min-width: @tablet-width) {
+    min-width: 0;
     padding-top: 0;
   }
 }
