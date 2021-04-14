@@ -2,7 +2,7 @@
   font-size: 24px;
   line-height: 24px;
   text-align: center;
-  color: black;
+  color: @basic_black;
 }
 
 .example-list__definition {
@@ -19,5 +19,12 @@
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
-  color: black;
+  color: @basic_black;
+}
+
+.example-list {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row;
+  }
 }
