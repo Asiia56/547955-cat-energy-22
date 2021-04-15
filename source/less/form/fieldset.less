@@ -3,19 +3,32 @@
   font-size: 24px;
   line-height: 26px;
   color: @basic_black;
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+.fieldset__legend--contacts {
+  padding-top: 26px;
+  padding-bottom: 35px;
 }
 
 .fieldset {
   border: none;
-  width: @mobile-container;
-  margin: 0 auto;
-  padding: 0;
+}
+
+.reason {
+  border-top: 1px solid @border_grey-footer;
+  border-bottom: 1px solid @border_grey-footer;
 
   @media (min-width: @tablet-width) {
-    width: 630px;
+    width: 628px;
+    border: 1px solid @border_grey-footer;
   }
 
   @media (min-width: @desktop-width) {
-    width: 1219px;
+    width: 568px;
   }
 }

@@ -12,6 +12,8 @@
 
 .site-nav__toggle {
   position: absolute;
+  top: -55px;
+  left: 260px;
   width: 30px;
   height: 30px;
   cursor: pointer;
@@ -24,13 +26,12 @@
 }
 
 .site-nav--closed .site-nav__toggle {
-  top: -61px;
-  left: 260px;
-
   &::before {
     content: "";
     position: absolute;
-    width: 24px;
+    top: 5px;
+    left: 0;
+    width: 30px;
     height: 2px;
     background-color: @basic_black;
     box-shadow: 0 8px 0 0 @basic_black, 0 16px 0 0 @basic_black;
@@ -38,14 +39,13 @@
 }
 
 .site-nav--opened .site-nav__toggle {
-  top: -56px;
-  left: 260px;
-
   &::after,
   &::before {
     content: "";
     position: absolute;
-    width: 24px;
+    top: 12px;
+    left: 0;
+    width: 30px;
     height: 2px;
     background-color: @basic_black;
   }
