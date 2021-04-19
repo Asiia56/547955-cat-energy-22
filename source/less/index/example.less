@@ -1,30 +1,91 @@
 .example {
+  width: 100%;
   background-color: @basic_grey;
+
+  @media (min-width: @tablet-width) {
+    background-image: linear-gradient(#ffffff 57%, #f2f2f2 57%);
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: linear-gradient(#ffffff 31%, #f2f2f2 31%);
+  }
 }
 
-.example-header__wrapper {
+.example__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  padding-top: 17px;
+  padding-bottom: 38px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 43px;
+    padding-bottom: 68px;
+  }
+
   @media (min-width: @desktop-width) {
-    background-color: @basic_white;
-    padding-bottom: 56px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 22px;
+    padding-left: 40px;
+    padding-bottom: 70px;
+  }
+}
+
+.example__container {
+  @media (min-width: @tablet-width) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: column;
+    width: 570px;
+    justify-content: flex-start;
+    padding-top: 55px;
+  }
+}
+
+.example__header {
+  @media (min-width: @tablet-width) {
+    padding-bottom: 64px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+    padding-bottom: 146px;
   }
 }
 
 .example__details {
-  @media (min-width: @tablet-width) {
-    background-color: @basic_white;
-  }
+  width: 100%;
 
   @media (min-width: @desktop-width) {
-    background-color: @basic_grey;
+    width: 680px;
+    padding-top: 0;
+    padding-right: 209px;
   }
 }
 
 .example__text {
   font-family: "Arial", sans-serif;
   color: @special_dark-grey;
+  padding-right: 10px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 31px;
+    padding-right: 61px;
+    padding-bottom: 29px;
+  }
 
   @media (min-width: @desktop-width) {
-    max-width: 436px;
-    padding-top: 70px;
+    padding: 0;
+    padding-bottom: 69px;
+    width: 431px;
   }
 }

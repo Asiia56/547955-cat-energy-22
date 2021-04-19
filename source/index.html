@@ -37,8 +37,7 @@
           <picture>
             <source media="(min-width: 1280px)" srcset="./img/index/promo/index-can-desktop@1x.png 1x, ./img/index/promo/index-can-desktop@2x.png 2x">
             <source media="(min-width: 768px)" srcset="./img/index/promo/index-can-tablet@1x.jpg 1x, ./img/index/promo/index-can-tablet@1x.jpg 2x" width="709" height="609">
-            <img src="./img/index/promo/index-can-mobile@1x.png" srcset="./img/index/promo/index-can-mobile@2x.png 2x" width="280" height="271"
-              alt="Cat Energy product">
+            <img src="./img/index/promo/index-can-mobile@1x.png" srcset="./img/index/promo/index-can-mobile@2x.png 2x" width="280" height="271" alt="Cat Energy product">
           </picture>
         </div>
         <a href="form.html" class="basic-btn basic-btn--promo">Подобрать программу</a>
@@ -90,46 +89,67 @@
     </section>
 
     <section class="example">
-    <div class="container">
-      <div class="example-header__wrapper">
-        <h2 class="section-header">Живой пример</h2>
-      </div>
-
-        <div class="example__details">
-          <p class="example__text">
-            Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без
-            изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
-          </p>
-          <dl class="example-list">
-            <div class="example-list__group">
-              <dt class="example-list__term"> 5 КГ </dt>
-              <dd class="example-list__definition">снижение веса</dd>
-              <dt class="example-list__term">60 ДНЕЙ </dt>
-              <dd class="example-list__definition">затрачено времени</dd>
-            </div>
-            <dt class="example-list__term--div">Затраты на питание: </dt>
-            <dd class="example-list__term--div">15 000 РУБ.</dd>
-          </dl>
+      <div class="container example__wrapper">
+        <div class="example__container">
+          <h2 class="section-header example__header">Живой пример</h2>
+          <div class="example__details">
+            <p class="example__text">
+              Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без
+              изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+            </p>
+            <dl class="example-list">
+              <div class="example-list__wrapper">
+                <div class="example-list__group">
+                  <div class="example-list__box">
+                    <dt class="example-list__term"> 5 КГ </dt>
+                    <dd class="example-list__definition example-list__definition--weight">снижение веса</dd>
+                  </div>
+                  <div class="example-list__box">
+                    <dt class="example-list__term">60 ДНЕЙ </dt>
+                    <dd class="example-list__definition example-list__definition--time">затрачено времени</dd>
+                  </div>
+                </div>
+                <div class="example-list__conclusion">
+                  <span class="example-list__span">Затраты на питание: </span>
+                  15 000 РУБ.
+                </div>
+              </div>
+            </dl>
+          </div>
         </div>
 
         <div class="slider">
-          <div class="slider__items">
-            <img class="example__img" src="img/index/before-mobile_1.png" width="311" height="232" alt="Boris was" />
-            <img class="example__img" src="img/index/after-mobile_1.png" width="251" height="240" alt="Boris is" />
+          <div class="example__list">
+            <div class="example__item">
+              <label class="example__label example__label--before" for="before-field">
+                Было
+              </label>
+            </div>
+            <div class="example__item">
+              <label class="example__label example__label--after" for="after-field">
+                Стало
+              </label>
+            </div>
           </div>
-          <div class="slider__toggle-wrapper" hidden>
-            <span class="slider__state">Было</span>
-            <button class="slider__toggle-btn" type="button"></button>
-            <span class="slider__state">Стало</span>
-          </div>
-          <div class="slider__range-wrapper" hidden>
-            <span class="slider__state">Было</span>
-            <div class="slider__range">
-              <div class="slider__range-bar">
-                <button class="slider__range-toggle" tabindex="0"></button>
+          <input class="example__input example__input--before visually-hidden" type="radio" name="cat" id="before-field" checked="">
+          <input class="example__input example__input--after visually-hidden" type="radio" name="cat" id="after-field">
+          <div class="example__slider">
+            <div class="example__toggle">
+              <div class="example__point">
               </div>
             </div>
-            <span class="slider__state">Стало</span>
+          </div>
+          <div class="example__image">
+            <picture>
+              <source media="(min-width: 1280px)" srcset=".img/index/slider/before-desktop@1x.png 1x, .img/index/slider/before-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset=".img/index/slider/before-tablet@1x.png 1x, .img/index/slider/before-tablet@2x.png 2x">
+              <img class="example__before" src=".img/index/slider/before-mobile@1x.png" srcset=".img/index/slider/before-mobile@2x.png 2x" width="320" height="240" alt="Boris was like that before Cat Energy">
+            </picture>
+            <picture>
+              <source media="(min-width: 1280px)" srcset=".img/index/slider/after-desktop@1x.png 1x, .img/index/slider/after-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset=".img/index/slider/after-tablet@1x.png 1x, .img/index/slider/after-tablet@2x.png 2x">
+              <img class="example__after" src=".img/index/slider/after-mobile@1x.png" srcset=".img/index/slider/after-mobile@2x.png 2x" width="320" height="240" alt="Boris is like that thanks to Cat Energy">
+            </picture>
           </div>
         </div>
       </div>
@@ -192,8 +212,7 @@
           <a href="https://htmlacademy.ru/intensive/adaptive" class="footer-copyright__text">
             HTML Academy
           </a>
-          <svg class="footer-copyright__img" width="27" height="34" viewBox="0 0 27 34" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
+          <svg class="footer-copyright__img" width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z" />
           </svg>
