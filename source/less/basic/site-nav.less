@@ -1,6 +1,4 @@
 .site-nav {
-  position: relative;
-
   @media (min-width: @tablet-width) {
     min-width: 440px;
   }
@@ -12,6 +10,8 @@
 
 .site-nav__toggle {
   position: absolute;
+  top: 15px;
+  right: 20px;
   width: 30px;
   height: 30px;
   cursor: pointer;
@@ -24,12 +24,11 @@
 }
 
 .site-nav--closed .site-nav__toggle {
-  top: -61px;
-  left: 260px;
-
   &::before {
     content: "";
     position: absolute;
+    left: 2px;
+    top: 5px;
     width: 24px;
     height: 2px;
     background-color: @basic_black;
@@ -38,13 +37,12 @@
 }
 
 .site-nav--opened .site-nav__toggle {
-  top: -56px;
-  left: 260px;
-
   &::after,
   &::before {
     content: "";
     position: absolute;
+    left: 2px;
+    top: 12px;
     width: 24px;
     height: 2px;
     background-color: @basic_black;

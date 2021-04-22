@@ -2,17 +2,20 @@
   display: flex;
   flex-direction: column;
   width: @mobile-width-only;
-  margin: 0 auto;
-  padding: 0;
+  padding-top: 11px;
+  border-bottom: 1px solid @basic_grey;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     width: @tablet-container;
     flex-direction: row;
     justify-content: space-between;
+    border-bottom: none;
   }
 
   @media (min-width: @desktop-width) {
     width: @desktop-container;
     padding-top: 53px;
+    border-bottom: none;
   }
 }

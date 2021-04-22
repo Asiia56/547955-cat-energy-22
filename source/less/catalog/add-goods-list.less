@@ -1,9 +1,26 @@
 .add-goods-list {
   margin: 0;
   padding: 0;
+}
+
+.add-goods-list__characterictics {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-content: center;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+
+  @media (min-width: @tablet-width) {
+    margin: 26px 38px 15px 38px;
+  }
 
   @media (min-width: @desktop-width) {
-    width: 896px;
+    padding-bottom: 0;
+    margin: 0;
+    width: 610px;
+    display: grid;
+    grid-template-columns: 3fr 2fr 1fr;
   }
 }
 
@@ -13,23 +30,23 @@
   line-height: 16px;
   text-transform: uppercase;
   color: @special_dark-grey-2;
+  margin: 0;
+  padding-right: 147px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+
+  &--milk {
+    padding-right: 200px;
+  }
 
   @media (min-width: @tablet-width) {
-    margin-top: 0;
-  }
-
-  @media (min-width: @desktop-width) {
-    margin: 0;
-  }
-}
-
-.add-goods-list__characterictics {
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 15px;
-
-  @media (min-width: @desktop-width) {
+    padding-top: 0;
+    padding-right: 244px;
     padding-bottom: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: initial;
   }
 }
 
@@ -42,8 +59,8 @@
 }
 
 .add-goods-list__item {
-  padding-bottom: 18px;
-  border-bottom: 1px solid @special_grey-2;
+  padding-bottom: 28px;
+  border-bottom: 1px solid @special_grey;
 
   @media (min-width: @tablet-width) {
     border-bottom: none;
@@ -61,24 +78,14 @@
   }
 }
 
-.add-goods-list__item:last-of-type {
+.add-goods-list__value {
   @media (min-width: @desktop-width) {
-    border-bottom: 1px solid @special_grey;
+    text-align: right;
   }
 }
 
-.add-goods-list__item-wrapper {
-  @media (min-width: @tablet-width) {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 632px;
-    margin: 0 auto;
-    padding: 0;
-    padding-top: 26px;
-  }
-
+.add-goods-list__item:last-of-type {
   @media (min-width: @desktop-width) {
-    padding-top: 0;
+    border-bottom: 1px solid @special_grey;
   }
 }

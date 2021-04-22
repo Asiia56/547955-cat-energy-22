@@ -24,10 +24,11 @@
 }
 
 .footer__invitation--wrapper {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 
   @media (min-width: @desktop-width) {
+    display: flex;
     background-color: @basic_white;
     height: 201px;
     justify-content: space-around;
