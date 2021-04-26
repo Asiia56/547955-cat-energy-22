@@ -1,6 +1,11 @@
 .add-goods-list {
   margin: 0;
   padding: 0;
+
+  @media (min-width: @desktop-width) {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
 }
 
 .add-goods-list__characterictics {

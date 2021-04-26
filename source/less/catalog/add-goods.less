@@ -16,7 +16,11 @@
 .add-goods__wrapper {
   @media (min-width: @desktop-width) {
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    column-gap: 81px;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 80px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 86px;
   }
 }
