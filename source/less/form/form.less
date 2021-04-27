@@ -8,6 +8,11 @@
   padding-bottom: 20px;
 }
 
+.form__label--input {
+  display: flex;
+  align-items: center;
+}
+
 .form__input-box {
   box-sizing: border-box;
   color: @special_dark-grey;
@@ -19,6 +24,8 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
+  flex-grow: 1;
+  margin-left: 13px;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
@@ -61,18 +68,31 @@
 }
 
 .basic-info,
-.contacts {
+.contacts--wrapper {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: flex-start;
 }
 
-.contacts,
 .first-two-fieldset--wrapper {
   @media (min-width: @desktop-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.contacts--wrapper {
+  @media (min-width: @desktop-width) {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.contacts--wrapper .form__label:last-of-type {
+  @media (min-width: @desktop-width) {
+    padding-left: 78px;
   }
 }
 
@@ -88,10 +108,14 @@
 }
 
 .reason__list {
+  box-sizing: border-box;
+  border-top: 1px solid @border_grey-footer;
+  border-bottom: 1px solid @border_grey-footer;
+
   @media (min-width: @tablet-width) {
-    margin-top: 0;
-    padding-top: 20px;
-    padding-bottom: 0;
+    border: 1px solid @border_grey-footer;
+    padding-top: 25px;
+    padding-bottom: 25px;
   }
 }
 

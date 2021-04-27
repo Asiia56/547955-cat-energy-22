@@ -1,56 +1,64 @@
 .basic-btn {
-  display: inline-grid;
   background-color: @basic_green;
-  color: white;
-  width: 280px;
-  height: 40px;
+  color: @basic_white;
   text-align: center;
-  vertical-align: middle;
   text-transform: uppercase;
   border: none;
   align-items: center;
+  padding: 7px 44px;
 
-  @media (min-width: @tablet-width) {
-    width: 244px;
-    height: 54px;
-  }
-}
+  &--promo {
+    margin-left: 14px;
+    margin-right: 26px;
 
-.basic-btn--order {
-  @media (min-width: @tablet-width) {
-    width: 248px;
-    height: 39px;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 168px;
-    height: 40px;
-  }
-}
-
-.basic-btn--add {
-  @media (min-width: @tablet-width) {
-    width: 632px;
-    height: 38px;
-    margin-left: 38px;
+    @media (min-width: @tablet-width) {
+      margin-left: auto;
+      position: absolute;
+      top: 260px;
+      z-index: 2;
+      padding: 14px 26px;
+    }
   }
 
-  @media (min-width: @desktop-width) {
-    width: 244px;
-    height: 40px;
-    margin-left: auto;
+  &--order {
+    padding: 10px 109px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+    @media (min-width: @tablet-width) {
+      padding: 10px 93px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding: 10px 53px;
+    }
   }
-}
 
-.basic-btn--promo {
-  margin-left: 14px;
+  &--show {
+    background-color: @basic_grey;
+    color: @special_dark-grey;
+    padding: 10px 94px;
 
-  @media (min-width: @tablet-width) {
-    margin-left: auto;
-    position: absolute;
-    top: 260px;
-    left: 0;
-    z-index: 2;
+    @media (min-width: @tablet-width) {
+      padding: 10px 79px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding: 10px 37px;
+    }
+  }
+
+  &--add {
+    padding: 10px 113px;
+
+    @media (min-width: @tablet-width) {
+      padding: 6px 285px;
+      margin-left: 38px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding: 7px 92px;
+    }
   }
 }
 
@@ -61,21 +69,6 @@
 .basic-btn:focus {
   background-color: @basic_green-2;
   opacity: 0.3;
-}
-
-.basic-btn--show {
-  background-color: @basic_grey;
-  color: @special_dark-grey;
-
-  @media (min-width: @tablet-width) {
-    width: 249px;
-    height: 40px;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 169px;
-    height: 40px;
-  }
 }
 
 .basic-btn--show:hover {

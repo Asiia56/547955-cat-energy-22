@@ -1,17 +1,21 @@
 .header {
   display: flex;
   flex-direction: column;
-  width: 320px;
-  margin: 0 auto;
-  padding: 0;
+  width: @mobile-width-only;
+  padding-top: 11px;
+  border-bottom: 1px solid @basic_grey;
+  position: relative;
 
   @media (min-width: @tablet-width) {
-    width: 708px;
+    width: @tablet-container;
     flex-direction: row;
     justify-content: space-between;
+    border-bottom: none;
   }
 
   @media (min-width: @desktop-width) {
-    width: 1219px;
+    width: @desktop-container;
+    padding-top: 53px;
+    border-bottom: none;
   }
 }
