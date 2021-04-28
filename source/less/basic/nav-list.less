@@ -57,11 +57,17 @@
 
 .nav-list__link {
   color: @basic_black;
-}
 
-.nav-list__link--index {
-  @media (min-width: @desktop-width) {
-    color: @basic_white;
+  &--index {
+    @media (min-width: @desktop-width) {
+      color: @basic_white;
+    }
+  }
+
+  &--current {
+    @media (min-width: @tablet-width) {
+      border-bottom: 2px solid @basic_green;
+    }
   }
 }
 
