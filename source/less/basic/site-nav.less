@@ -16,7 +16,7 @@
   height: 30px;
   cursor: pointer;
   border: none;
-  background-color: white;
+  background-color: @basic_white;
 
   @media (min-width: @tablet-width) {
     display: none;
@@ -74,9 +74,11 @@
 .site-nav--nojs .nav-list,
 .site-nav--opened .nav-list {
   display: inline;
+  height: 194px;
 
   @media (min-width: @tablet-width) {
     display: flex;
     justify-content: space-between;
+    height: auto;
   }
 }
