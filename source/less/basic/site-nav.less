@@ -27,7 +27,7 @@
   &::before {
     content: "";
     position: absolute;
-    left: 2px;
+    left: 5px;
     top: 5px;
     width: 24px;
     height: 2px;
@@ -36,13 +36,17 @@
   }
 }
 
+.site-nav--opened {
+  padding-top: 15px;
+}
+
 .site-nav--opened .site-nav__toggle {
   &::after,
   &::before {
     content: "";
     position: absolute;
-    left: 2px;
-    top: 12px;
+    left: 4px;
+    top: 15px;
     width: 24px;
     height: 2px;
     background-color: @basic_black;

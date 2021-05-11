@@ -9,9 +9,6 @@
 }
 
 .footer__invitation {
-  padding-top: 20px;
-  padding-bottom: 12px;
-
   @media (min-width: @desktop-width) {
     padding: 0;
     height: 400px;
@@ -22,12 +19,15 @@
 .footer__invitation--wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  padding-top: 28px;
+  padding-bottom: 26px;
+
 
   @media (min-width: @tablet-width) {
     display: flex;
     justify-content: space-between;
-    padding-top: 35px;
-    padding-bottom: 35px;
+    padding-top: 65px;
+    padding-bottom: 62px;
   }
 
   @media (min-width: @desktop-width) {
@@ -51,6 +51,7 @@
   line-height: 18px;
   text-transform: uppercase;
   color: @special_black;
+  margin: 0;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
@@ -70,6 +71,7 @@
   font-size: 14px;
   line-height: 20px;
   color: @special_dark-grey;
+  margin: 0;
 
   @media (min-width: @tablet-width) {
     font-size: 16px;

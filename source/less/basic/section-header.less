@@ -5,14 +5,24 @@
   color: @basic_black;
 
   &--promo {
-    padding-top: 27px;
     font-size: 36px;
     line-height: 36px;
     color: @basic_white;
     text-align: center;
     position: relative;
     z-index: 2;
-    margin-top: 0;
+    margin-top: -3px;
+  }
+
+  &--how {
+    margin: 0;
+    margin-bottom: 40px;
+    margin-top: 31px;
+  }
+
+  &--example {
+    margin-top: 15px;
+    margin-bottom: 31px;
   }
 
   @media (min-width: @tablet-width) {
@@ -26,12 +36,21 @@
       text-align: left;
       color: @basic_black;
     }
+
+    &--example {
+      padding-bottom: 64px;
+    }
   }
 
   @media (min-width: @desktop-width) {
     &--promo {
       padding-left: 70px;
       padding-top: 90px;
+    }
+
+    &--example {
+      padding: 0;
+      padding-bottom: 146px;
     }
   }
 }
