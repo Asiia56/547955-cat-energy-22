@@ -40,6 +40,7 @@
 }
 
 .promo__wrapper {
+  box-sizing: border-box;
   width: @mobile-width-only;
   margin: 0 auto;
   position: relative;
@@ -47,8 +48,7 @@
   flex-direction: column;
   justify-content: flex-start;
   text-align: center;
-  padding: 28px 20px 22px;
-
+  padding: 28px 20px 0 22px;
 
   @media (min-width: @tablet-width) {
     width: @tablet-container;
@@ -63,6 +63,7 @@
 
 .promo__image {
   padding-bottom: 2px;
+  margin-top: 29px;
 
   @media (min-width: @desktop-width) {
     position: absolute;
@@ -74,9 +75,11 @@
 .promo__text {
   text-align: center;
   text-transform: uppercase;
-  color: white;
+  color: @basic_white;
   position: relative;
   z-index: 2;
+  padding: 0;
+  margin: 0;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;

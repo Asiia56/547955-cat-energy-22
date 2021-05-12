@@ -1,44 +1,48 @@
-.footer--background {
-  background-color: @basic_grey;
-}
-
 .footer {
+  &--background {
+    background-color: @basic_grey;
+  }
+
   @media (min-width: @desktop-width) {
     position: relative;
   }
 }
 
 .footer__invitation {
-  padding-top: 28px;
-  padding-bottom: 26px;
-
   @media (min-width: @desktop-width) {
     padding: 0;
-    max-width: 570px;
     height: 400px;
-    position: relative;
-    z-index: 2;
-    top: 95px;
-    left: 110px;
-    margin-left: 0;
+    width: @desktop-container;
   }
 }
 
 .footer__invitation--wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  padding-top: 28px;
+  padding-bottom: 26px;
+
 
   @media (min-width: @tablet-width) {
     display: flex;
     justify-content: space-between;
+    padding-top: 65px;
+    padding-bottom: 62px;
   }
 
   @media (min-width: @desktop-width) {
-    display: flex;
-    background-color: @basic_white;
-    height: 201px;
-    justify-content: space-around;
+    position: relative;
+    top: 95px;
+    column-gap: 85px;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     align-items: center;
+    background-color: @basic_white;
+    width: 570px;
+    height: 201px;
+    padding: 0;
+    margin: 0;
   }
 }
 
@@ -47,13 +51,18 @@
   line-height: 18px;
   text-transform: uppercase;
   color: @special_black;
+  margin: 0;
 
   @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 22px;
     max-width: 171px;
+    padding-left: 40px;
   }
 
   @media (min-width: @desktop-width) {
     max-width: 163px;
+    padding-left: 76px;
   }
 }
 
@@ -62,15 +71,31 @@
   font-size: 14px;
   line-height: 20px;
   color: @special_dark-grey;
+  margin: 0;
 
   @media (min-width: @tablet-width) {
+    font-size: 16px;
     max-width: 159px;
     text-align: right;
+    padding-right: 40px;
   }
 
   @media (min-width: @desktop-width) {
     max-width: 155px;
+    padding-right: 0;
     text-align: left;
+  }
+}
+
+.footer__map {
+  line-height: 1px;
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
   }
 }
 
