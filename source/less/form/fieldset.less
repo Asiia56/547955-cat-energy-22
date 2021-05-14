@@ -1,3 +1,14 @@
+.fieldset {
+  border: none;
+  position: relative;
+  padding: 0;
+  margin: 0 auto;
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+  }
+}
+
 .fieldset__legend {
   font-weight: normal;
   font-size: 24px;
@@ -6,32 +17,39 @@
   z-index: 1;
 
   &--contacts {
-    margin-top: 22px;
+    margin-top: 0;
     margin-bottom: 35px;
     width: 187px;
+  }
 
-    @media (min-width: @tablet-width) {
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+
+    &--contacts {
       width: auto;
       margin-top: 69px;
-      margin-bottom: 78px;
-    }
-
-    @media (min-width: @desktop-width) {
-      margin-top: 50px;
-      margin-bottom: 40px;
+      margin-bottom: 76px;
     }
   }
 
-  &--textarea {
-    padding-top: 12px;
+  @media (min-width: @desktop-width) {
+    &--contacts {
+      margin-bottom: 0;
+      margin-top: 0;
+    }
 
-    @media (min-width: @tablet-width) {
-      padding-top: 45px;
+    &--add {
+      padding-top: 10px;
     }
   }
+}
 
-  &--add {
-    padding-top: 4px;
+&--textarea {
+  padding-top: 12px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 45px;
   }
 
   @media (min-width: @tablet-width) {
@@ -40,19 +58,21 @@
   }
 }
 
-.fieldset {
-  border: none;
-  position: relative;
-  padding: 0;
-  margin: 0;
-}
-
 .reason {
   @media (min-width: @tablet-width) {
-    margin-top: 46px;
+    margin-top: 52px;
   }
 
   @media (min-width: @desktop-width) {
     margin-top: 0;
+  }
+}
+
+.contacts {
+  margin-top: 26px;
+
+  @media (min-width: @desktop-width) {
+    margin-top: 50px;
+    margin-bottom: 45px;
   }
 }
