@@ -11,18 +11,19 @@
     text-align: center;
     position: relative;
     z-index: 2;
-    margin-top: -3px;
+    margin-top: 0;
+    margin-bottom: 25px;
   }
 
   &--how {
     margin: 0;
     margin-bottom: 40px;
-    margin-top: 31px;
+    margin-top: 27px;
   }
 
   &--example {
-    margin-top: 15px;
-    margin-bottom: 31px;
+    margin-top: 0;
+    margin-bottom: 33px;
   }
 
   @media (min-width: @tablet-width) {
@@ -33,22 +34,34 @@
       width: 414px;
       text-align: left;
       color: @basic_black;
+      padding-bottom: 42px;
+      padding-top: 55px;
+      padding-left: 87px;
+      margin-bottom: 0;
     }
 
     &--example {
-      padding-bottom: 64px;
+      padding-bottom: 30px;
+    }
+
+    &--how {
+      margin-bottom: 65px;
     }
   }
 
   @media (min-width: @desktop-width) {
     &--promo {
       padding-left: 70px;
-      padding-top: 90px;
+      padding-top: 95px;
     }
 
     &--example {
       padding: 0;
-      padding-bottom: 146px;
+      padding-bottom: 76px;
+    }
+
+    &--how {
+      margin-bottom: 61px;
     }
   }
 }
