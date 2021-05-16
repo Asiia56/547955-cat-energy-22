@@ -17,7 +17,7 @@
   @media (min-width: @tablet-width) {
     &--input {
       padding-bottom: 20px;
-      column-gap: 20px;
+      column-gap: 15px;
     }
   }
 }
@@ -34,21 +34,14 @@
   font-size: 16px;
   line-height: 18px;
   flex-grow: 1;
-  padding-left: 12px;
-
-  /*&[id="age-field"] {
-    padding-bottom: 13px;
-    margin-left: 5px;
-  }*/
+  padding-left: 15px;
+  padding-right: 10px;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
     padding-left: 18px;
     height: 52px;
-    /*&[id="age-field"] {
-      margin-left: 18px;
-    }*/
   }
 
   @media (min-width: @desktop-width) {
@@ -102,7 +95,6 @@
   @media (min-width: @desktop-width) {
     margin-top: 76px;
     margin-bottom: 58px;
-    padding-top: 5px;
   }
 }
 
@@ -179,8 +171,11 @@
   padding-bottom: 5px;
   margin-left: 20px;
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @tablet-width) {
     padding-bottom: 0;
+  }
+
+  @media (min-width: @desktop-width) {
     margin-left: 16px;
   }
 }
@@ -215,10 +210,10 @@
   padding-bottom: 0;
 
   @media (min-width: @tablet-width) {
+    padding-top: 48px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding-top: 55px;
-    row-gap: 22px;
+    row-gap: 18px;
     column-gap: 60px;
   }
 
@@ -234,7 +229,7 @@
 }
 
 .form__label-checkbox:not(.form__label-checkbox--first) {
-  padding-top: 4px;
+  padding-top: 3px;
 }
 
 .form__input-box[type="email"] {
@@ -307,7 +302,7 @@
 
 .form__label-checkbox {
   @media (min-width: @tablet-width) {
-    padding-left: 55px;
+    padding-left: 60px;
     padding-top: 5px;
   }
 
@@ -422,7 +417,7 @@
 
 .form__submit--wrapper {
   margin-bottom: 32px;
-  margin-top: 20px;
+  margin-top: 17px;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 72px;
