@@ -26,7 +26,7 @@
     display: flex;
     justify-content: space-between;
     padding-top: 65px;
-    padding-bottom: 62px;
+    padding-bottom: 42px;
     align-items: center;
   }
 
@@ -58,11 +58,13 @@
     line-height: 24px;
     max-width: 171px;
     padding-left: 40px;
+    padding-bottom: 18px;
   }
 
   @media (min-width: @desktop-width) {
     max-width: 163px;
     padding-left: 76px;
+    padding-bottom: 0;
   }
 }
 
@@ -78,12 +80,25 @@
     max-width: 159px;
     text-align: right;
     padding-right: 40px;
+
+    &--city {
+      height: 36px;
+      display: inline-block;
+      padding-top: 18px;
+    }
   }
 
   @media (min-width: @desktop-width) {
     max-width: 155px;
     padding-right: 0;
     text-align: left;
+    margin-top: 21px;
+
+    &--city {
+      height: 36px;
+      display: inline-block;
+      padding-top: 18px;
+    }
   }
 }
 
@@ -109,7 +124,8 @@
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
-    padding-top: 42px;
+    padding-top: 45px;
+    padding-bottom: 61px;
   }
 }
 
@@ -117,12 +133,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 22px;
+  padding-top: 21px;
   min-width: @mobile-container;
+  border-top: 1px solid @border_grey-footer;
 
   @media (min-width: @tablet-width) {
     min-width: 0;
     padding-top: 0;
+    border-top: none;
   }
 }
 
@@ -134,13 +152,5 @@
 
   @media (min-width: @tablet-width) {
     padding-right: 22px;
-  }
-}
-
-.footer-social-btn {
-  border-bottom: 1px solid @border_grey-footer;
-
-  @media (min-width: @tablet-width) {
-    border-bottom: none;
   }
 }

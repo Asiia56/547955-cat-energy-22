@@ -15,46 +15,128 @@
   line-height: 26px;
   color: @basic_black;
   z-index: 1;
+  width: 100%;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    background-color: @basic_green;
+    z-index: 1;
+  }
 
   &--contacts {
     margin-top: 0;
     margin-bottom: 35px;
     width: 187px;
+
+    &::after {
+      bottom: 35px;
+      left: 200px;
+      width: 99px;
+    }
+  }
+
+  &--textarea {
+    padding-top: 10px;
+
+    &::after {
+      bottom: 10px;
+      left: 145px;
+      width: 158px;
+    }
+  }
+
+  &--add {
+    &::after {
+      bottom: 10px;
+      left: 165px;
+      width: 136px;
+    }
   }
 
   @media (min-width: @tablet-width) {
     font-size: 36px;
     line-height: 36px;
 
+    &::before {
+      content: "";
+      position: absolute;
+      height: 2px;
+      background-color: @basic_green;
+      z-index: 1;
+      bottom: 12px;
+      left: -69px;
+      width: 30px;
+    }
+
     &--contacts {
       width: auto;
-      margin-top: 69px;
+      padding-top: 0;
       margin-bottom: 76px;
+
+      &::after {
+        bottom: 12px;
+        left: 555px;
+        width: 145px;
+      }
+    }
+
+    &--textarea {
+      padding-top: 0;
+
+      &::after {
+        bottom: 12px;
+        left: 220px;
+        width: 478px;
+      }
+    }
+
+    &--add {
+      &::after {
+        bottom: 12px;
+        left: 252px;
+        width: 446px;
+      }
     }
   }
 
   @media (min-width: @desktop-width) {
+    &::before {
+      bottom: 12px;
+      left: -110px;
+      width: 70px;
+    }
+
     &--contacts {
       margin-bottom: 0;
       margin-top: 0;
+      background-color: @basic_white;
+      z-index: 2;
+
+      &::after {
+        width: 778px;
+        left: 551px;
+        bottom: 14px;
+      }
+    }
+
+    &--textarea {
+      padding-top: 0;
+
+      &::after {
+        width: 1108px;
+      }
     }
 
     &--add {
-      padding-top: 10px;
+      padding-top: 5px;
+
+      &::after {
+        width: 1078px;
+      }
     }
-  }
-}
-
-&--textarea {
-  padding-top: 12px;
-
-  @media (min-width: @tablet-width) {
-    padding-top: 45px;
-  }
-
-  @media (min-width: @tablet-width) {
-    font-size: 36px;
-    line-height: 36px;
   }
 }
 
@@ -71,8 +153,24 @@
 .contacts {
   margin-top: 26px;
 
+  @media (min-width: @tablet-width) {
+    margin-top: 78px;
+  }
+
   @media (min-width: @desktop-width) {
     margin-top: 50px;
     margin-bottom: 45px;
+  }
+}
+
+.about-cat {
+  @media (min-width: @tablet-width) {
+    margin-top: 45px;
+  }
+}
+
+.additional-goods {
+  @media (min-width: @tablet-width) {
+    margin-top: 5px;
   }
 }

@@ -12,10 +12,12 @@
     display: flex;
     align-items: center;
     column-gap: 13px;
+  }
 
-    @media (min-width: @tablet-width) {
+  @media (min-width: @tablet-width) {
+    &--input {
       padding-bottom: 20px;
-      column-gap: 20px;
+      column-gap: 15px;
     }
   }
 }
@@ -32,21 +34,14 @@
   font-size: 16px;
   line-height: 18px;
   flex-grow: 1;
-  padding-left: 12px;
-
-  /*&[id="age-field"] {
-    padding-bottom: 13px;
-    margin-left: 5px;
-  }*/
+  padding-left: 15px;
+  padding-right: 10px;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
     padding-left: 18px;
     height: 52px;
-    /*&[id="age-field"] {
-      margin-left: 18px;
-    }*/
   }
 
   @media (min-width: @desktop-width) {
@@ -54,20 +49,19 @@
   }
 }
 
-
 .form__input-box:hover,
 .form__input-textarea:hover {
   border: 1px solid @special_dark-grey;
 }
 
-.form__input-box:focus,
-.form__input-textarea:focus {
+.form__input-box:active,
+.form__input-textarea:active {
   border: 2px solid @special_dark-grey;
   outline: none;
 }
 
-.form__input-box:focus:invalid,
-.form__input-textarea:focus:invalid {
+.form__input-box:invalid:not(:focus):not(:placeholder-shown),
+.form__input-textarea:invalid:not(:focus):not(:placeholder-shown) {
   border: 2px solid @status_error;
 }
 
@@ -101,7 +95,6 @@
   @media (min-width: @desktop-width) {
     margin-top: 76px;
     margin-bottom: 58px;
-    padding-top: 5px;
   }
 }
 
@@ -178,8 +171,11 @@
   padding-bottom: 5px;
   margin-left: 20px;
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @tablet-width) {
     padding-bottom: 0;
+  }
+
+  @media (min-width: @desktop-width) {
     margin-left: 16px;
   }
 }
@@ -214,10 +210,10 @@
   padding-bottom: 0;
 
   @media (min-width: @tablet-width) {
+    padding-top: 48px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding-top: 55px;
-    row-gap: 22px;
+    row-gap: 18px;
     column-gap: 60px;
   }
 
@@ -233,24 +229,58 @@
 }
 
 .form__label-checkbox:not(.form__label-checkbox--first) {
-  padding-top: 4px;
+  padding-top: 3px;
 }
 
-.form__input-mail {
-  background-image: url("../img/svg/icon_email.svg");
-  background-repeat: no-repeat;
-  background-position-y: center;
-  background-position-x: 95%;
+.form__input-box[type="email"] {
+  position: relative;
   padding-right: 38px;
+
+  @media (min-width: @tablet-width) {
+    padding-right: 33px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-right: 40px;
+  }
 }
 
-.form__input-phone {
-  background-image: url("../img/svg/icon_phone.svg");
-  background-repeat: no-repeat;
-  background-position-y: center;
-  background-position-x: 93%;
-  padding-right: 25px;
-  overflow: hidden;
+.form__input-box[type="tel"] {
+  position: relative;
+  padding-right: 20px;
+}
+
+.form__svg {
+  position: absolute;
+  right: 16px;
+  fill: @basic_black;
+  stroke: @basic_black;
+
+  &--phone {
+    right: 12px;
+  }
+
+  @media (min-width: @tablet-width) {
+    right: 15px;
+  }
+
+  @media (min-width: @desktop-width) {
+    &--mail {
+      right: 666px;
+    }
+  }
+}
+
+.form__input-box[type="tel"]:focus + .form__svg,
+.form__input-box[type="email"]:focus + .form__svg {
+  fill: @basic_green;
+  stroke: @basic_green;
+}
+
+.form__input-box[type="tel"]:invalid:not(:focus):not(:placeholder-shown) + .form__svg,
+.form__input-box[type="email"]:invalid:not(:focus):not(:placeholder-shown) + .form__svg {
+  fill: @status_error;
+  stroke: @status_error;
 }
 
 .form__input-checkbox,
@@ -272,7 +302,7 @@
 
 .form__label-checkbox {
   @media (min-width: @tablet-width) {
-    padding-left: 55px;
+    padding-left: 60px;
     padding-top: 5px;
   }
 
@@ -387,7 +417,7 @@
 
 .form__submit--wrapper {
   margin-bottom: 32px;
-  margin-top: 20px;
+  margin-top: 17px;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 72px;
