@@ -133,12 +133,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 19px;
+  padding-top: 21px;
   min-width: @mobile-container;
+  border-top: 1px solid @border_grey-footer;
 
   @media (min-width: @tablet-width) {
     min-width: 0;
     padding-top: 0;
+    border-top: none;
   }
 }
 
@@ -150,13 +152,5 @@
 
   @media (min-width: @tablet-width) {
     padding-right: 22px;
-  }
-}
-
-.footer-social-btn {
-  border-bottom: 1px solid @border_grey-footer;
-
-  @media (min-width: @tablet-width) {
-    border-bottom: none;
   }
 }
