@@ -29,7 +29,8 @@
       <button class="site-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <ul class="nav-list">
         <li class="nav-list__item"> <a class="nav-list__link" href="index.html">Главная</a> </li>
-        <li class="nav-list__item"> <a class="nav-list__link  nav-list__link--current" href="catalog.html">Каталог продукции</a> </li>
+        <li class="nav-list__item"> <a class="nav-list__link  nav-list__link--current" href="catalog.html">Каталог
+            продукции</a> </li>
         <li class="nav-list__item"> <a class="nav-list__link" href="form.html">Подбор программы</a> </li>
       </ul>
     </nav>
@@ -37,148 +38,193 @@
 
   <main class="page-main container">
     <section class="goods">
-      <h1 class="page__header">Каталог продукции</h1>
+      <h1 class="page__header page__header--catalog">Каталог продукции</h1>
       <ul class="goods-list">
         <li class="goods-list__item">
-          <a href="#" class="goods-list__image">
-            <img srcset="img/catalog/can-1-mobile@1x.png 140w, img/catalog/can-1-mobile@2x.png 280w,
-                              img/catalog/can-1-tablet@1x.png 168w, img/catalog/can-1-tablet@2x.png 336w,
-                              img/catalog/can-1-desktop@1x.png 172w, img/catalog/can-1-desktop@2x.png 344w" sizes="(min-width: 1280px) 172px, (min-width: 768px) 168px, 140px" src="img/catalog/can-1-desktop@1x.png"
-              alt="Cat Energy PRO 500 г курица" />
-          </a>
-          <a href="#" class="goods-list__header">
-            <h3 class=" goods-list__item-header">Cat Energy PRO 500 г</h3>
-          </a>
-          <dl class="goods-list__characterictics">
-            <dt class="goods-list__characterictics-label">Масса </dt>
-            <dd class="goods-list__characterictics-value">500 г</dd>
-            <dt class="goods-list__characterictics-label">Вкус</dt>
-            <dd class="goods-list__characterictics-value">Курица</dd>
-            <dt class="goods-list__characterictics-label">Цена</dt>
-            <dd class="goods-list__characterictics-value">700 Р.</dd>
-          </dl>
-          <a href="form.html" class="basic-btn basic-btn--order">заказать</a>
+          <div class="goods-list__item-wrapper goods-list__item-wrapper--first">
+            <a href="#" class="goods-list__image-link">
+              <picture>
+                <source media="(min-width: 1280px)"
+                  srcset="img/catalog/can-1-desktop@1x.png 1x, img/catalog/can-1-desktop@2x.png 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/catalog/can-1-tablet@1x.png 1x, img/catalog/can-1-tablet@2x.png 2x">
+                <img class="goods-list__image" src="img/catalog/can-1-mobile@1x.png"
+                  srcset="img/catalog/can-1-mobile@2x.png 2x" alt="Cat Energy PRO 500 г курица">
+              </picture>
+            </a>
+            <a href="#" class="goods-list__header">
+              <h3 class="goods-list__item-header">Cat Energy PRO 500 г</h3>
+            </a>
+            <dl class="goods-list__characterictics">
+              <dt class="goods-list__characterictics-label">Масса </dt>
+              <dd class="goods-list__characterictics-value">500 г</dd>
+              <dt class="taste goods-list__characterictics-label">Вкус</dt>
+              <dd class="taste goods-list__characterictics-value">Курица</dd>
+              <dt class="goods-list__characterictics-label">Цена</dt>
+              <dd class="goods-list__characterictics-value">700 Р.</dd>
+            </dl>
+            <a href="form.html" class="basic-btn basic-btn--order">заказать</a>
+          </div>
         </li>
         <li class="goods-list__item">
-          <a href="#" class="goods-list__image">
-            <img srcset="img/catalog/can-2-mobile@1x.png 140w, img/catalog/can-2-mobile@2x.png 280w,
-                              img/catalog/can-2-tablet@1x.png 168w, img/catalog/can-2-tablet@2x.png 336w,
-                              img/catalog/can-2-desktop@1x.png 172w, img/catalog/can-2-desktop@2x.png 344w" sizes="(min-width: 1280px) 172px, (min-width: 768px) 168px, 140px" src="img/catalog/can-2-desktop@1x.png"
-              alt="Cat Energy PRO 1000 г курица" />
-          </a>
-          <a href="#" class="goods-list__header">
-            <h3 class="goods-list__item-header">Cat Energy PRO 1000 г</h3>
-          </a>
-          <dl class="goods-list__characterictics">
-            <dt class="goods-list__characterictics-label">Масса </dt>
-            <dd class="goods-list__characterictics-value">1000 г</dd>
-            <dt class="goods-list__characterictics-label">Вкус</dt>
-            <dd class="goods-list__characterictics-value">Курица</dd>
-            <dt class="goods-list__characterictics-label">Цена</dt>
-            <dd class="goods-list__characterictics-value">1000 Р.</dd>
-          </dl>
-          <a href="form.html" class="basic-btn basic-btn--order">заказать</a>
+          <div class="goods-list__item-wrapper">
+            <a href="#" class="goods-list__image-link">
+              <picture>
+                <source media="(min-width: 1280px)"
+                  srcset="img/catalog/can-2-desktop@1x.png 1x, img/catalog/can-2-desktop@2x.png 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/catalog/can-2-tablet@1x.png 1x, img/catalog/can-2-tablet@2x.png 2x">
+                <img class="goods-list__image goods-list__image--even" src="img/catalog/can-2-mobile@1x.png"
+                  srcset="img/catalog/can-2-mobile@2x.png 2x" alt="Cat Energy PRO 1000 г курица">
+              </picture>
+            </a>
+            <a href="#" class="goods-list__header">
+              <h3 class="goods-list__item-header">Cat Energy PRO 1000 г</h3>
+            </a>
+            <dl class="goods-list__characterictics">
+              <dt class="goods-list__characterictics-label">Масса </dt>
+              <dd class="goods-list__characterictics-value">1000 г</dd>
+              <dt class="goods-list__characterictics-label">Вкус</dt>
+              <dd class="goods-list__characterictics-value">Курица</dd>
+              <dt class="goods-list__characterictics-label">Цена</dt>
+              <dd class="goods-list__characterictics-value">1000 Р.</dd>
+            </dl>
+            <a href="form.html" class="basic-btn basic-btn--order">заказать</a>
+          </div>
         </li>
         <li class="goods-list__item">
-          <a href="#" class="goods-list__image">
-            <img srcset="img/catalog/can-3-mobile@1x.png 140w, img/catalog/can-3-mobile@2x.png 280w,
-                              img/catalog/can-3-tablet@1x.png 168w, img/catalog/can-3-tablet@2x.png 336w,
-                              img/catalog/can-3-desktop@1x.png 172w, img/catalog/can-3-desktop@2x.png 344w" sizes="(min-width: 1280px) 172px, (min-width: 768px) 168px, 140px" src="img/catalog/can-3-desktop@1x.png" alt="Cat Energy PRO 500 г рыба" />
-          </a>
-          <a href="#" class="goods-list__header">
-            <h3 class="goods-list__item-header">Cat Energy PRO 500 г</h3>
-          </a>
-          <dl class="goods-list__characterictics">
-            <dt class="goods-list__characterictics-label">Масса </dt>
-            <dd class="goods-list__characterictics-value">500 г</dd>
-            <dt class="goods-list__characterictics-label">Вкус</dt>
-            <dd class="goods-list__characterictics-value">Рыба</dd>
-            <dt class="goods-list__characterictics-label">Цена</dt>
-            <dd class="goods-list__characterictics-value">700 Р.</dd>
-          </dl>
-          <a href="form.html" class="basic-btn basic-btn--order">заказать</a>
+          <div class="goods-list__item-wrapper">
+            <a href="#" class="goods-list__image-link">
+              <picture>
+                <source media="(min-width: 1280px)"
+                  srcset="img/catalog/can-3-desktop@1x.png 1x, img/catalog/can-3-desktop@2x.png 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/catalog/can-3-tablet@1x.png 1x, img/catalog/can-3-tablet@2x.png 2x">
+                <img class="goods-list__image" src="img/catalog/can-3-mobile@1x.png"
+                  srcset="img/catalog/can-3-mobile@2x.png 2x" alt="Cat Energy PRO 500 г рыба">
+              </picture>
+            </a>
+            <a href="#" class="goods-list__header">
+              <h3 class="goods-list__item-header">Cat Energy PRO 500 г</h3>
+            </a>
+            <dl class="goods-list__characterictics">
+              <dt class="goods-list__characterictics-label">Масса </dt>
+              <dd class="goods-list__characterictics-value">500 г</dd>
+              <dt class="goods-list__characterictics-label">Вкус</dt>
+              <dd class="goods-list__characterictics-value">Рыба</dd>
+              <dt class="goods-list__characterictics-label">Цена</dt>
+              <dd class="goods-list__characterictics-value">700 Р.</dd>
+            </dl>
+            <a href="form.html" class="basic-btn basic-btn--order">заказать</a>
+          </div>
         </li>
         <li class="goods-list__item">
-          <a href="#" class="goods-list__image">
-            <img srcset="img/catalog/can-4-mobile@1x.png 140w, img/catalog/can-4-mobile@2x.png 280w,
-                              img/catalog/can-4-tablet@1x.png 168w, img/catalog/can-4-tablet@2x.png 336w,
-                              img/catalog/can-4-desktop@1x.png 172w, img/catalog/can-4-desktop@2x.png 344w" sizes="(min-width: 1280px) 172px, (min-width: 768px) 168px, 140px" src="img/catalog/can-4-desktop@1x.png" alt="Cat Energy PRO 1000 г рыба" />
-          </a>
-          <a href="#" class="goods-list__header">
-            <h3 class="goods-list__item-header">Cat Energy PRO 1000 г</h3>
-          </a>
-          <dl class="goods-list__characterictics">
-            <dt class="goods-list__characterictics-label">Масса </dt>
-            <dd class="goods-list__characterictics-value">1000 г</dd>
-            <dt class="goods-list__characterictics-label">Вкус</dt>
-            <dd class="goods-list__characterictics-value">Рыба</dd>
-            <dt class="goods-list__characterictics-label">Цена</dt>
-            <dd class="goods-list__characterictics-value">1000 Р.</dd>
-          </dl>
-          <a href="form.html" class="basic-btn basic-btn--order">заказать</a>
+          <div class="goods-list__item-wrapper">
+            <a href="#" class="goods-list__image-link">
+              <picture>
+                <source media="(min-width: 1280px)"
+                  srcset="img/catalog/can-4-desktop@1x.png 1x, img/catalog/can-4-desktop@2x.png 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/catalog/can-4-tablet@1x.png 1x, img/catalog/can-4-tablet@2x.png 2x">
+                <img class="goods-list__image goods-list__image--even" src="img/catalog/can-4-mobile@1x.png"
+                  srcset="img/catalog/can-4-mobile@2x.png 2x" alt="Cat Energy PRO 1000 г рыба">
+              </picture>
+            </a>
+            <a href="#" class="goods-list__header">
+              <h3 class="goods-list__item-header">Cat Energy PRO 1000 г</h3>
+            </a>
+            <dl class="goods-list__characterictics">
+              <dt class="goods-list__characterictics-label">Масса </dt>
+              <dd class="goods-list__characterictics-value">1000 г</dd>
+              <dt class="goods-list__characterictics-label">Вкус</dt>
+              <dd class="goods-list__characterictics-value">Рыба</dd>
+              <dt class="goods-list__characterictics-label">Цена</dt>
+              <dd class="goods-list__characterictics-value">1000 Р.</dd>
+            </dl>
+            <a href="form.html" class="basic-btn basic-btn--order">заказать</a>
+          </div>
         </li>
         <li class="goods-list__item">
-          <a href="#" class="goods-list__image">
-            <img srcset="img/catalog/can-5-mobile@1x.png 140w, img/catalog/can-5-mobile@2x.png 280w,
-                              img/catalog/can-5-tablet@1x.png 168w, img/catalog/can-5-tablet@2x.png 336w,
-                              img/catalog/can-5-desktop@1x.png 172w, img/catalog/can-5-desktop@2x.png 344w" sizes="(min-width: 1280px) 172px, (min-width: 768px) 168px, 140px" src="img/catalog/can-5-desktop@1x.png"
-              alt="Cat Energy Slim 500 г гречка" />
-          </a>
-          <a href="#" class="goods-list__header">
-            <h3 class="goods-list__item-header">Cat Energy Slim 500 г</h3>
-          </a>
-          <dl class="goods-list__characterictics">
-            <dt class="goods-list__characterictics-label">Масса </dt>
-            <dd class="goods-list__characterictics-value">500 г</dd>
-            <dt class="goods-list__characterictics-label">Вкус</dt>
-            <dd class="goods-list__characterictics-value">Гречка</dd>
-            <dt class="goods-list__characterictics-label">Цена</dt>
-            <dd class="goods-list__characterictics-value">400 Р.</dd>
-          </dl>
-          <a href="form.html" class="basic-btn basic-btn--order">заказать</a>
+          <div class="goods-list__item-wrapper">
+            <a href="#" class="goods-list__image-link">
+              <picture>
+                <source media="(min-width: 1280px)"
+                  srcset="img/catalog/can-5-desktop@1x.png 1x, img/catalog/can-5-desktop@2x.png 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/catalog/can-5-tablet@1x.png 1x, img/catalog/can-5-tablet@2x.png 2x">
+                <img class="goods-list__image" src="img/catalog/can-5-mobile@1x.png"
+                  srcset="img/catalog/can-5-mobile@2x.png 2x" alt="Cat Energy PRO 500 г гречка">
+              </picture>
+            </a>
+            <a href="#" class="goods-list__header">
+              <h3 class="goods-list__item-header">Cat Energy Slim 500 г</h3>
+            </a>
+            <dl class="goods-list__characterictics">
+              <dt class="goods-list__characterictics-label">Масса </dt>
+              <dd class="goods-list__characterictics-value">500 г</dd>
+              <dt class="goods-list__characterictics-label">Вкус</dt>
+              <dd class="goods-list__characterictics-value">Гречка</dd>
+              <dt class="goods-list__characterictics-label">Цена</dt>
+              <dd class="goods-list__characterictics-value">400 Р.</dd>
+            </dl>
+            <a href="form.html" class="basic-btn basic-btn--order">заказать</a>
+          </div>
         </li>
         <li class="goods-list__item">
-          <a href="#" class="goods-list__image">
-            <img srcset="img/catalog/can-6-mobile@1x.png 140w, img/catalog/can-6-mobile@2x.png 280w,
-                              img/catalog/can-6-tablet@1x.png 168w, img/catalog/can-6-tablet@2x.png 336w,
-                              img/catalog/can-6-desktop@1x.png 172w, img/catalog/can-6-desktop@2x.png 344w" sizes="(min-width: 1280px) 172px, (min-width: 768px) 168px, 140px" src="img/catalog/can-6-desktop@1x.png"
-              alt="Cat Energy Slim 1000 г гречка" />
-          </a>
-          <a href="#" class="goods-list__header">
-            <h3 class="goods-list__item-header">Cat Energy Slim 1000 г</h3>
-          </a>
-          <dl class="goods-list__characterictics">
-            <dt class="goods-list__characterictics-label">Масса </dt>
-            <dd class="goods-list__characterictics-value">1000 г</dd>
-            <dt class="goods-list__characterictics-label">Вкус</dt>
-            <dd class="goods-list__characterictics-value">Гречка</dd>
-            <dt class="goods-list__characterictics-label">Цена</dt>
-            <dd class="goods-list__characterictics-value">700 Р.</dd>
-          </dl>
-          <a href="form.html" class="basic-btn basic-btn--order">заказать</a>
+          <div class="goods-list__item-wrapper">
+            <a href="#" class="goods-list__image-link">
+              <picture>
+                <source media="(min-width: 1280px)"
+                  srcset="img/catalog/can-6-desktop@1x.png 1x, img/catalog/can-6-desktop@2x.png 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/catalog/can-6-tablet@1x.png 1x, img/catalog/can-6-tablet@2x.png 2x">
+                <img class="goods-list__image goods-list__image--even" src="img/catalog/can-6-mobile@1x.png"
+                  srcset="img/catalog/can-6-mobile@2x.png 2x" alt="Cat Energy PRO 1000 г гречка">
+              </picture>
+            </a>
+            <a href="#" class="goods-list__header">
+              <h3 class="goods-list__item-header">Cat Energy Slim 1000 г</h3>
+            </a>
+            <dl class="goods-list__characterictics">
+              <dt class="goods-list__characterictics-label">Масса </dt>
+              <dd class="goods-list__characterictics-value">1000 г</dd>
+              <dt class="goods-list__characterictics-label">Вкус</dt>
+              <dd class="goods-list__characterictics-value">Гречка</dd>
+              <dt class="goods-list__characterictics-label">Цена</dt>
+              <dd class="goods-list__characterictics-value">700 Р.</dd>
+            </dl>
+            <a href="form.html" class="basic-btn basic-btn--order">заказать</a>
+          </div>
         </li>
         <li class="goods-list__item">
-          <a href="#" class="goods-list__image">
-            <img srcset="img/catalog/can-7-mobile@1x.png 140w, img/catalog/can-7-mobile@2x.png 280w,
-                              img/catalog/can-7-tablet@1x.png 168w, img/catalog/can-7-tablet@2x.png 336w,
-                              img/catalog/can-7-desktop@1x.png 172w, img/catalog/can-7-desktop@2x.png 344w" sizes="(min-width: 1280px) 172px, (min-width: 768px) 168px, 140px" src="img/catalog/can-7-desktop@1x.png" alt="Cat Energy Slim 500 г рис" />
-          </a>
-          <a href="#" class="goods-list__header">
-            <h3 class="goods-list__item-header">Cat Energy Slim 500 г</h3>
-          </a>
-          <dl class="goods-list__characterictics">
-            <dt class="goods-list__characterictics-label">Масса </dt>
-            <dd class="goods-list__characterictics-value">500 г</dd>
-            <dt class="goods-list__characterictics-label">Вкус</dt>
-            <dd class="goods-list__characterictics-value">Рис</dd>
-            <dt class="goods-list__characterictics-label">Цена</dt>
-            <dd class="goods-list__characterictics-value">500 Р.</dd>
-          </dl>
-          <a href="form.html" class="basic-btn basic-btn--order">заказать</a>
+          <div class="goods-list__item-wrapper">
+            <a href="#" class="goods-list__image-link">
+              <picture>
+                <source media="(min-width: 1280px)"
+                  srcset="img/catalog/can-7-desktop@1x.png 1x, img/catalog/can-7-desktop@2x.png 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/catalog/can-7-tablet@1x.png 1x, img/catalog/can-7-tablet@2x.png 2x">
+                <img class="goods-list__image" src="img/catalog/can-7-mobile@1x.png"
+                  srcset="img/catalog/can-7-mobile@2x.png 2x" alt="Cat Energy PRO 500 г рис">
+              </picture>
+            </a>
+            <a href="#" class="goods-list__header">
+              <h3 class="goods-list__item-header">Cat Energy Slim 500 г</h3>
+            </a>
+            <dl class="goods-list__characterictics">
+              <dt class="goods-list__characterictics-label">Масса </dt>
+              <dd class="goods-list__characterictics-value">500 г</dd>
+              <dt class="goods-list__characterictics-label">Вкус</dt>
+              <dd class="goods-list__characterictics-value">Рис</dd>
+              <dt class="goods-list__characterictics-label">Цена</dt>
+              <dd class="goods-list__characterictics-value">500 Р.</dd>
+            </dl>
+            <a href="form.html" class="basic-btn basic-btn--order">заказать</a>
+          </div>
         </li>
 
-        <li class="goods-list__item--more">
-          <div class="goods-list__item-wrapper--more">
+        <li class="goods-list__item goods-list__item--more">
+          <div class="goods-list__item-wrapper goods-list__item-wrapper--more">
             <a href="#" class="goods-list__image--more">
               <svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <line x1="15" x2="15" y2="30" stroke="#D3D3D3" stroke-width="2" />
@@ -212,7 +258,7 @@
             <dl class="add-goods-list__characterictics">
               <dt class="add-goods-list__name-item">питьевая вода</dt>
               <dt class="add-goods-list__label">5 литров</dt>
-              <dd class="add-goods-list__value">50 Р.</dd>
+              <dd class="add-goods-list__value add-goods-list__value--water">50 Р.</dd>
             </dl>
             <a href="form.html" class="basic-btn basic-btn--add">заказать</a>
           </li>
@@ -243,8 +289,9 @@
   <footer class="footer footer--background">
     <div class="footer__invitation container">
       <div class="footer__invitation--wrapper">
-        <p class="footer__text">Приглашаем<br/>к сотрудничеству дилеров!</p>
-        <p class="footer__address">ул. Большая Конюшенная, д. 19/8 <span class="footer__address--city">Санкт-Петербург</span></p>
+        <p class="footer__text">Приглашаем<br />к сотрудничеству дилеров!</p>
+        <p class="footer__address">ул. Большая Конюшенная, д. 19/8 <span
+            class="footer__address--city">Санкт-Петербург</span></p>
       </div>
     </div>
 
@@ -313,7 +360,7 @@
 
     navSite.classList.remove('site-nav--nojs');
 
-    navToggle.addEventListener('click', function() {
+    navToggle.addEventListener('click', function () {
       if (navSite.classList.contains('site-nav--closed')) {
         navSite.classList.remove('site-nav--closed');
         navSite.classList.add('site-nav--opened');
@@ -322,6 +369,7 @@
         navSite.classList.remove('site-nav--opened');
       }
     });
+
   </script>
 </body>
 
