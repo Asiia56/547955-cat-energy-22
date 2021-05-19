@@ -8,7 +8,7 @@
     grid-template-columns: repeat(2, 1fr);
     column-gap: 60px;
     row-gap: 68px;
-    margin-bottom: 68px;
+    margin-bottom: 65px;
   }
 
   @media (min-width: @desktop-width) {
@@ -235,7 +235,9 @@
   align-self: end;
 
   @media (min-width: @tablet-width) {
-    align-self: center;
+    display: flex;
+    margin-top: -75px;
+    height: 209px;
   }
 }
 
@@ -247,21 +249,11 @@
   }
 
   @media (min-width: @tablet-width) {
-    margin-top: -80px;
-
-    &:not(&--even) {
-      height: 208px;
-    }
-
     &--more {
       margin-top: 0;
       width: 60px;
       height: 60px;
       padding-bottom: 39px;
     }
-  }
-
-  @media (min-width: @desktop-width) {
-    height: 208px;
   }
 }
