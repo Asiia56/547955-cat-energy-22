@@ -12,6 +12,7 @@ const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
 const del = require("del");
 const sync = require("browser-sync").create();
+const svgstore = require("gulp-svgstore");
 
 // Styles
 
@@ -69,7 +70,7 @@ const optimizeImages = () => {
       }),
       imagemin.svgo()
     ]))
-    .pipe(gulp.dest("source/build/img"))
+    .pipe(gulp.dest("build/img"))
 }
 
 exports.images = optimizeImages;
@@ -140,10 +141,23 @@ const reload = (done) => {
 // Watcher
 
 const watcher = () => {
-  gulp.watch("source/less/**/*.less", gulp.series("styles"));
+  gulp.watch("source/less/**/*.less", gulp.series(styles));
   gulp.watch("source/js/*.js", gulp.series(scripts));
   gulp.watch("source/*.html").on("change", sync.reload);
 }
+
+// Sprite
+
+const sprite = () => {
+  return gulp.src("source/img/svg/social/*.svg")
+    .pipe(svgstore({
+      inlineSvg: true
+    }))
+    .pipe(rename("sprite.svg"))
+    .pipe(gulp.dest("build/img/svg/social"));
+}
+
+exports.sprite = sprite;
 
 // Build
 
@@ -155,6 +169,7 @@ const build = gulp.series(
     styles,
     html,
     scripts,
+    sprite,
     createWebp
   ),
 );
@@ -169,6 +184,7 @@ exports.default = gulp.series(
     styles,
     html,
     scripts,
+    sprite,
     createWebp
   ),
   gulp.series(
