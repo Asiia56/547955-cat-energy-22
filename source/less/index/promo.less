@@ -3,6 +3,29 @@
   width: 100%;
 }
 
+.promo__wrapper {
+  box-sizing: border-box;
+  width: @mobile-width-only;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: center;
+  padding: 27px 20px 0 22px;
+
+  @media (min-width: @tablet-width) {
+    width: @tablet-container;
+    padding: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    text-align: left;
+    width: @desktop-width;
+    padding: 0 0 368px 40px;
+    box-sizing: border-box;
+  }
+}
 
 .promo::before {
   content: "";
@@ -40,34 +63,11 @@
     background-image: url("../img/index/promo/index-background-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-position: top right;
-    background-size: cover;
+    background-size: cover 100%;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/index/promo/index-background-mobile@2x.jpg");
     }
-  }
-}
-
-.promo__wrapper {
-  box-sizing: border-box;
-  width: @mobile-width-only;
-  margin: 0 auto;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  text-align: center;
-  padding: 27px 20px 0 22px;
-
-  @media (min-width: @tablet-width) {
-    width: @tablet-container;
-    padding: 0;
-  }
-
-  @media (min-width: @desktop-width) {
-    text-align: left;
-    width: @desktop-width;
-    padding: 0 0 368px 40px;
   }
 }
 

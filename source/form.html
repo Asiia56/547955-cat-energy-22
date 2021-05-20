@@ -36,13 +36,12 @@
     </nav>
   </header>
 
-  <main class="page-main">
+  <main class="page__main">
     <div class="container-form">
       <h1 class="page__header">Подбор программы</h1>
       <p class="page-form__intro"> Заполните анкету, и мы подберем <br /> программу питания для вашего кота </p>
 
       <form class="form" action="https://echo.htmlacademy.ru" method="post">
-
         <div class="first-two-fieldset--wrapper">
           <fieldset class="basic-info fieldset">
             <label class="form__label form__label--input" for="name-field">ИМЯ:*
@@ -79,7 +78,7 @@
 
         <fieldset class="contacts fieldset">
           <legend class="fieldset__legend fieldset__legend--contacts">Контактные данные (владельца кота)</legend>
-          <div class="contacts--wrapper">
+          <div class="contacts__wrapper">
             <label class="form__label form__label--input" for="email-field">E-mail:*
               <input class="form__input-box" id="email-field" type="email" name="email"
                 placeholder="kuklachev@gmail.com" required />
@@ -124,8 +123,8 @@
           <legend class="fieldset__legend fieldset__legend--add">Дополнительно</legend>
           <ul class="additional-goods__list">
             <li class="form__checkbox">
-              <input class="form__input-checkbox form__input-checkbox--sugar visually-hidden form__input" type="checkbox" name="add-good"
-                id="check-sugar" checked>
+              <input class="form__input-checkbox form__input-checkbox--sugar visually-hidden form__input"
+                type="checkbox" name="add-good" id="check-sugar" checked>
               <label class="form__label form__label-checkbox form__label-checkbox--first"
                 for="check-sugar">сахарозаменитель</label>
             </li>
@@ -227,3 +226,8 @@
 </body>
 
 </html>
+<svg width="13" height="20" viewBox="0 0 13 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path
+    d="M11.5 0.833252H8.75002C7.53445 0.833252 6.36866 1.30674 5.50911 2.14957C4.64957 2.99239 4.16669 4.1355 4.16669 5.32743V8.02394H1.41669V11.6193H4.16669V18.81H7.83335V11.6193H10.5834L11.5 8.02394H7.83335V5.32743C7.83335 5.08905 7.92993 4.86042 8.10184 4.69186C8.27375 4.52329 8.50691 4.4286 8.75002 4.4286H11.5V0.833252Z"
+    stroke="#666666"  />
+</svg>
