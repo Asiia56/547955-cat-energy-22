@@ -7,7 +7,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 60px;
-    row-gap: 68px;
+    row-gap: 67px;
     margin-bottom: 65px;
   }
 
@@ -30,6 +30,7 @@
     padding-left: 42px;
     padding-right: 36px;
     max-width: 174px;
+    padding-top: 5px;
   }
 }
 
@@ -232,12 +233,14 @@
 .goods-list__image-link {
   grid-row-start: 1;
   grid-row-end: 3;
-  align-self: end;
+  align-self: flex-end;
 
   @media (min-width: @tablet-width) {
     display: flex;
-    margin-top: -75px;
+    margin-top: -80px;
     height: 209px;
+    align-self: none;
+    align-items: flex-end;
   }
 }
 

@@ -24,6 +24,7 @@
     height: 2px;
     background-color: @basic_green;
     z-index: 1;
+    width: 100%;
   }
 
   &--contacts {
@@ -34,7 +35,6 @@
     &::after {
       bottom: 35px;
       left: 200px;
-      width: 99px;
     }
   }
 
@@ -44,7 +44,6 @@
     &::after {
       bottom: 10px;
       left: 145px;
-      width: 158px;
     }
   }
 
@@ -52,7 +51,6 @@
     &::after {
       bottom: 10px;
       left: 165px;
-      width: 136px;
     }
   }
 
@@ -67,8 +65,7 @@
       background-color: @basic_green;
       z-index: 1;
       bottom: 12px;
-      left: -69px;
-      width: 30px;
+      width: 100%;
     }
 
     &--contacts {
@@ -78,8 +75,11 @@
 
       &::after {
         bottom: 12px;
-        left: 555px;
-        width: 145px;
+        left: 550px;
+      }
+
+      &::before {
+        left: -550px;
       }
     }
 
@@ -89,7 +89,10 @@
       &::after {
         bottom: 12px;
         left: 220px;
-        width: 478px;
+      }
+
+      &::before {
+        left: -670px;
       }
     }
 
@@ -97,16 +100,18 @@
       &::after {
         bottom: 12px;
         left: 252px;
-        width: 446px;
+      }
+
+      &::before {
+        left: -670px;
       }
     }
   }
 
   @media (min-width: @desktop-width) {
     &::before {
-      bottom: 12px;
-      left: -110px;
-      width: 70px;
+      bottom: 14px;
+      left: -1260px;
     }
 
     &--contacts {
@@ -116,26 +121,21 @@
       z-index: 2;
 
       &::after {
-        width: 778px;
         left: 551px;
         bottom: 14px;
+      }
+
+      &::before {
+        left: -550px;
       }
     }
 
     &--textarea {
       padding-top: 0;
-
-      &::after {
-        width: 1108px;
-      }
     }
 
     &--add {
       padding-top: 5px;
-
-      &::after {
-        width: 1078px;
-      }
     }
   }
 }
