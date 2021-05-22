@@ -1,4 +1,5 @@
 .social-list {
+  list-style-type: none;
   display: flex;
   justify-content: space-between;
   padding-left: 0;
@@ -73,17 +74,17 @@
   fill: @special_grey-2;
 }
 
-.social-btn--vk:hover,
-.social-btn--inst:hover,
+.social-list__btn:hover .social-btn--vk,
+.social-list__btn:hover .social-btn--inst,
 .footer-copyright:hover .footer-copyright__img {
   fill: @basic_green;
 }
 
-.social-btn--fb:hover {
+.social-list__btn:hover .social-btn--fb {
   stroke: @basic_green;
 }
 
-.social-btn:focus,
+.social-list__btn:focus,
 .footer-copyright:focus .footer-copyright__img {
   opacity: 0.6;
 }

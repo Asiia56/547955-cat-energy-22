@@ -43,23 +43,21 @@
       <div class="promo__wrapper">
         <h1 class="section-header section-header--promo">Функциональное питание для котов</h1>
         <p class="promo__text">Занялся собой? Займись котом!</p>
-        <div class="promo__image">
-          <picture>
-            <source type="image/webp" media="(min-width: 1280px)"
-              srcset="img/index/promo/index-can-desktop@1x.webp 1x, img/index/promo/index-can-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)"
-              srcset="img/index/promo/index-can-tablet@1x.webp 1x, img/index/promo/index-can-tablet@1x.webp 2x">
-            <source type="image/webp"
-              srcset="img/index/promo/index-can-mobile@1x.webp, img/index/promo/index-can-mobile@2x.webp 2x">
-            <source media="(min-width: 1280px)"
-              srcset="img/index/promo/index-can-desktop@1x.png 1x, img/index/promo/index-can-desktop@2x.png 2x">
-            <source media="(min-width: 768px)"
-              srcset="img/index/promo/index-can-tablet@1x.jpg 1x, img/index/promo/index-can-tablet@2x.jpg 2x">
-            <img src="img/index/promo/index-can-mobile@1x.png"
-              srcset="img/index/promo/index-can-mobile@1x.png 1x, img/index/promo/index-can-mobile@2x.png 2x"
-              alt="Cat Energy product">
-          </picture>
-        </div>
+        <picture>
+          <source type="image/webp" media="(min-width: 1280px)"
+            srcset="img/index/promo/index-can-desktop@1x.webp 1x, img/index/promo/index-can-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)"
+            srcset="img/index/promo/index-can-tablet@1x.webp 1x, img/index/promo/index-can-tablet@1x.webp 2x">
+          <source type="image/webp"
+            srcset="img/index/promo/index-can-mobile@1x.webp, img/index/promo/index-can-mobile@2x.webp 2x">
+          <source media="(min-width: 1280px)"
+            srcset="img/index/promo/index-can-desktop@1x.png 1x, img/index/promo/index-can-desktop@2x.png 2x">
+          <source media="(min-width: 768px)"
+            srcset="img/index/promo/index-can-tablet@1x.jpg 1x, img/index/promo/index-can-tablet@2x.jpg 2x">
+          <img class="promo__image" src="img/index/promo/index-can-mobile@1x.png"
+            srcset="img/index/promo/index-can-mobile@1x.png 1x, img/index/promo/index-can-mobile@2x.png 2x"
+            alt="Cat Energy product">
+        </picture>
         <a href="form.html" class="basic-btn basic-btn--promo">Подобрать программу</a>
       </div>
     </section>
@@ -70,9 +68,9 @@
         <article class="options__usage">
           <div class="options__wrapper">
             <div class="options__header">
-              <img class="options-image__small-cat" src="./img/index/cat_small.svg" width="50" height="53"
+              <img class="options__image-small-cat" src="./img/index/cat_small.svg" width="50" height="53"
                 alt="small-cat" />
-              <h3 class="options__header--text">
+              <h3 class="options__header options__header--text">
                 Похудение
               </h3>
             </div>
@@ -85,8 +83,8 @@
         <article class="options__usage">
           <div class="options__wrapper">
             <div class="options__header options__header--big">
-              <img class="options-image__big-cat" src="./img/index/cat_big.svg" width="67" height="50" alt="big-cat" />
-              <h3 class="options__header--text">Набор массы</h3>
+              <img class="options__image-big-cat" src="./img/index/cat_big.svg" width="67" height="50" alt="big-cat" />
+              <h3 class="options__header options__header--text">Набор массы</h3>
             </div>
             <p class="options__text options__text--big"> Заработать авторитет среди дворовых котов и даже собак? Серия
               Cat Energy Pro поможет вашему коту нарастить необходимые мышцы! </p>
@@ -147,70 +145,77 @@
           </div>
         </div>
 
-        <div class="example__slider">
-          <div class="example__list">
-            <div class="example__item">
-              <label class="example__label example__label--before" for="before-field">
+        <div class="slider">
+          <div class="slider__list">
+            <div class="slider__item">
+              <label class="slider__label slider__label--before" for="before-field">
                 Было
               </label>
             </div>
-            <div class="example__bar">
-              <div class="example__toggle">
-                <div class="example__point">
+            <div class="slider__bar">
+              <div class="slider__toggle">
+                <div class="slider__point">
                 </div>
               </div>
             </div>
-            <div class="example__item">
-              <label class="example__label example__label--after" for="after-field">
+            <div class="slider__item">
+              <label class="slider__label slider__label--after" for="after-field">
                 Стало
               </label>
             </div>
           </div>
-          <input class="example__input example__input--before" type="radio" name="cat" id="before-field" checked="">
-          <input class="example__input example__input--after" type="radio" name="cat" id="after-field">
-          <div class="example__image">
-            <picture>
-              <source type="image/webp" media="(min-width: 1280px)"
-                srcset="./img/index/slider/before-desktop@1x.webp 1x, ./img/index/slider/before-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)"
-                srcset="./img/index/slider/before-tablet@1x.webp 1x, ./img/index/slider/before-tablet@2x.webp 2x">
-              <source type="image/webp"
-                srcset="./img/index/slider/before-mobile@1x.webp, ./img/index/slider/before-mobile@2x.webp 2x">
-              <source media="(min-width: 1280px)"
-                srcset="./img/index/slider/before-desktop@1x.png 1x, ./img/index/slider/before-desktop@2x.png 2x">
-              <source media="(min-width: 768px)"
-                srcset="./img/index/slider/before-tablet@1x.png 1x, ./img/index/slider/before-tablet@2x.png 2x">
-              <img class="example__before" src="./img/index/slider/before-mobile@1x.png"
-                srcset="./img/index/slider/before-mobile@1x.png 1x, ./img/index/slider/before-mobile@2x.png 2x"
-                alt="Boris was like that before Cat Energy">
-            </picture>
-            <picture>
-              <source type="image/webp" media="(min-width: 1280px)"
-                srcset="./img/index/slider/after-desktop@1x.webp 1x, ./img/index/slider/after-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)"
-                srcset="./img/index/slider/after-tablet@1x.webp 1x, ./img/index/slider/after-tablet@2x.webp 2x">
-              <source type="image/webp"
-                srcset="./img/index/slider/after-mobile@1x.webp, ./img/index/slider/after-mobile@2x.webp 2x">
-              <source media="(min-width: 1280px)"
-                srcset="./img/index/slider/after-desktop@1x.png 1x, ./img/index/slider/after-desktop@2x.png 2x">
-              <source media="(min-width: 768px)"
-                srcset="./img/index/slider/after-tablet@1x.png 1x, ./img/index/slider/after-tablet@2x.png 2x">
-              <img class="example__after" src="./img/index/slider/after-mobile@1x.png"
-                srcset="./img/index/slider/after-mobile@1x.png 1x, ./img/index/slider/after-mobile@2x.png 2x"
-                alt="Boris is like that thanks to Cat Energy">
-            </picture>
+
+          <input class="slider__input slider__input--before" type="radio" name="cat" id="before-field">
+          <input class="slider__input slider__input--after" type="radio" name="cat" id="after-field">
+
+          <div class="slider__image">
+            <div class="slider__image-wrapper slider__image-wrapper--before slider__image-wrapper--active">
+              <picture>
+                <source type="image/webp" media="(min-width: 1280px)"
+                  srcset="./img/index/slider/before-desktop@1x.webp 1x, ./img/index/slider/before-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="./img/index/slider/before-tablet@1x.webp 1x, ./img/index/slider/before-tablet@2x.webp 2x">
+                <source type="image/webp"
+                  srcset="./img/index/slider/before-mobile@1x.webp, ./img/index/slider/before-mobile@2x.webp 2x">
+                <source media="(min-width: 1280px)"
+                  srcset="./img/index/slider/before-desktop@1x.png 1x, ./img/index/slider/before-desktop@2x.png 2x">
+                <source media="(min-width: 768px)"
+                  srcset="./img/index/slider/before-tablet@1x.png 1x, ./img/index/slider/before-tablet@2x.png 2x">
+                <img class="slider__cat-image slider__cat-image--before" src="./img/index/slider/before-mobile@1x.png"
+                  srcset="./img/index/slider/before-mobile@1x.png 1x, ./img/index/slider/before-mobile@2x.png 2x"
+                  alt="Boris was like that before Cat Energy">
+              </picture>
+            </div>
+            <div class="slider__image-wrapper slider__image-wrapper--after">
+              <picture>
+                <source type="image/webp" media="(min-width: 1280px)"
+                  srcset="./img/index/slider/after-desktop@1x.webp 1x, ./img/index/slider/after-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="./img/index/slider/after-tablet@1x.webp 1x, ./img/index/slider/after-tablet@2x.webp 2x">
+                <source type="image/webp"
+                  srcset="./img/index/slider/after-mobile@1x.webp, ./img/index/slider/after-mobile@2x.webp 2x">
+                <source media="(min-width: 1280px)"
+                  srcset="./img/index/slider/after-desktop@1x.png 1x, ./img/index/slider/after-desktop@2x.png 2x">
+                <source media="(min-width: 768px)"
+                  srcset="./img/index/slider/after-tablet@1x.png 1x, ./img/index/slider/after-tablet@2x.png 2x">
+                <img class="slider__cat-image slider__cat-image--after" src="./img/index/slider/after-mobile@1x.png"
+                  srcset="./img/index/slider/after-mobile@1x.png 1x, ./img/index/slider/after-mobile@2x.png 2x"
+                  alt="Boris is like that thanks to Cat Energy">
+              </picture>
+            </div>
           </div>
         </div>
+      </div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
     <div class="footer__invitation container">
-      <div class="footer__invitation--wrapper">
+      <div class="footer__invitation-wrapper">
         <p class="footer__text">Приглашаем <br />к сотрудничеству дилеров!</p>
         <p class="footer__address">ул. Большая Конюшенная, д. 19/8 <span
-            class="footer__address--city">Санкт-Петербург</span></p>
+            class="footer__address-city">Санкт-Петербург</span></p>
       </div>
     </div>
 
@@ -220,10 +225,10 @@
         height="362" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </div>
 
-    <div class="footer--background">
-      <div class="container footer__last-line">
-        <div class="page__logo--footer">
-          <a class="page__logo--txt">
+    <div class="footer__background">
+      <div class="footer__last-line container">
+        <div class="page__logo-footer">
+          <a>
             <img src="img/svg/footer-logo-2.svg" width="128" height="24" alt="Кэт энерджи">
           </a>
         </div>
